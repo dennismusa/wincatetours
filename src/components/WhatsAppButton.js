@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
 return (
 
 <a
-href="https://wa.me/+254708711459?text=Hello%20Daffar%20Tours,%20I%20would%20like%20to%20book%20a%20tour."
+href="https://wa.me/+254724938419?text=Hello%20Wincate%20Tours,%20I%20would%20like%20to%20book%20a%20tour."
 target="_blank"
 rel="noopener noreferrer"
 
@@ -77,7 +77,7 @@ shadow-xl
 "
 >
 
-Chat with Daffar Tours 💬
+Chat with Wincate Tours 💬
 
 </div>
 

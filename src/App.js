@@ -8,9 +8,10 @@ import About from "./components/About";
 import Activities from "./components/Activities";
 import Communitywork from "./components/Communitywork";
 import Faqs from "./components/Faqs";
+import Services from "./components/Services";
 import Safaris from "./components/Safaris";
 import Tourafricablog from "./components/Tourafricablog";
-import Vehicles from "./components/Vehicles";
+
 import Destinations from "./components/Destinations";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
@@ -71,7 +72,7 @@ function App() {
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/packages" element={<Packages />} />
-            <Route path="/vehicles" element={<Vehicles />} />
+            <Route path="/Services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
 
             <Route  path="/Beachholidayssafaris"  element={<Beachholidayssafaris />}/>
