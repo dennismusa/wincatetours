@@ -5,7 +5,7 @@ import amboseli from "../assets/amboseli.jpg";
 //import migration from "../assets/migration.jpg";
 import nairobi from "../assets/nairobi.jpg";
 //import diani1 from "../assets/diani1.jpg";
-import safariVehicle from "../assets/safari-vehicle.jpg";
+import serengeti1 from "../assets/serengeti1.jpg";
 import {
   ArrowRight,
   Check,
@@ -112,7 +112,7 @@ const About = () => {
 
               <div className="absolute -bottom-8 -right-4 hidden w-52 overflow-hidden rounded-2xl border-8 border-[#FFF9F5] shadow-xl sm:block">
                 <img
-                  src={safariVehicle}
+                  src={serengeti1}
                   alt="Safari vehicle"
                   className="h-44 w-full object-cover"
                 />
@@ -417,7 +417,8 @@ const About = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white">
+ 
+<footer className="bg-black text-white">
   {/* Footer Main */}
   <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
     <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -425,7 +426,7 @@ const About = () => {
       {/* Brand */}
       <div>
         <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EC1676]">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EC1676] shadow-lg shadow-[#EC1676]/20">
             <span className="font-serif text-xl font-bold text-white">
               W
             </span>
@@ -435,6 +436,7 @@ const About = () => {
             <h3 className="font-serif text-2xl font-bold">
               Wincate
             </h3>
+
             <p className="-mt-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#FF4C9A]">
               Tours & Travels
             </p>
@@ -447,34 +449,117 @@ const About = () => {
           journey.
         </p>
 
-        {/* Social Icons */}
-        <div className="mt-6 flex gap-3">
+        {/* =====================================================
+            ANIMATED SOCIAL ICONS
+        ===================================================== */}
+        <div className="mt-7 flex gap-3">
+
+          {/* Facebook */}
           <a
-            href="wincate"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition hover:border-[#EC1676] hover:bg-[#EC1676] hover:text-white"
+            href="https://www.facebook.com/WincateToursAndTravels"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:rotate-3 hover:border-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:shadow-lg hover:shadow-[#1877F2]/30"
           >
-            f
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-5 w-5 transition-transform duration-300 group-hover:scale-110"
+            >
+              <path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v8h4v-8h3.5l.5-4H13V9c0-.67.33-1 1-1Z" />
+            </svg>
+          </a>
+          {/* TikTok */}
+          <a
+         href="https://www.Tiktok.com/WincateToursAndTravels"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="TikTok"
+    className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:rotate-3 hover:border-[#FF0050] hover:bg-black hover:text-white hover:shadow-lg hover:shadow-[#FF0050]/30"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+    >
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-3.88V2h-3.54v13.5a2.91 2.91 0 1 1-2-2.76v-3.6a6.45 6.45 0 1 0 5.54 6.36V8.67a8.3 8.3 0 0 0 4.86 1.56V6.69h-1.09Z" />
+    </svg>
+  </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/WincateToursAndTravels"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:-rotate-3 hover:border-[#E4405F] hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E4405F] hover:to-[#FCAF45] hover:text-white hover:shadow-lg hover:shadow-[#E4405F]/30"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              className="h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+              />
+
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              />
+
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
           </a>
 
-          <a
-            href="wincate"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition hover:border-[#EC1676] hover:bg-[#EC1676] hover:text-white"
-          >
-            ◎
-          </a>
-
+          {/* WhatsApp */}
           <a
             href="https://wa.me/254724938419"
             target="_blank"
             rel="noreferrer"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition hover:border-[#EC1676] hover:bg-[#EC1676] hover:text-white"
+            aria-label="WhatsApp"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:rotate-3 hover:border-[#25D366] hover:bg-[#25D366] hover:text-white hover:shadow-lg hover:shadow-[#25D366]/30"
           >
-            W
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+            >
+              <path d="M20.52 3.48A11.78 11.78 0 0 0 12.03 0C5.53 0 .24 5.29.24 11.79c0 2.08.54 4.11 1.56 5.9L.17 24l6.46-1.69a11.76 11.76 0 0 0 5.4 1.3h.01c6.49 0 11.78-5.29 11.78-11.79 0-3.14-1.22-6.1-3.3-8.34ZM12.04 21.6h-.01a9.78 9.78 0 0 1-4.98-1.36l-.36-.21-3.84 1 1.03-3.74-.24-.38a9.78 9.78 0 1 1 8.4 4.69Zm5.36-7.33c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.19 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.72-.7 1.96-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z" />
+            </svg>
           </a>
+
+
+
+        </div>
+
+        {/* Small animated line */}
+        <div className="mt-6 flex items-center gap-3">
+          <span className="h-px w-10 bg-[#EC1676]" />
+
+          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/30">
+            Follow Wincate
+          </span>
         </div>
       </div>
 
-      {/* Quick Links */}
+      {/* =====================================================
+          QUICK LINKS
+      ===================================================== */}
       <div>
         <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
           Explore
@@ -482,38 +567,60 @@ const About = () => {
 
         <ul className="space-y-4 text-sm text-white/55">
           <li>
-            <a href="/" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Home
             </a>
           </li>
 
           <li>
-            <a href="/about" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/about"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               About Us
             </a>
           </li>
 
           <li>
-            <a href="/services" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/services"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Services
             </a>
           </li>
 
           <li>
-            <a href="/packages" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/packages"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Safari Packages
             </a>
           </li>
 
           <li>
-            <a href="/contact" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/contact"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Contact Us
             </a>
           </li>
         </ul>
       </div>
 
-      {/* Destinations */}
+      {/* =====================================================
+          DESTINATIONS
+      ===================================================== */}
       <div>
         <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
           Destinations
@@ -521,38 +628,60 @@ const About = () => {
 
         <ul className="space-y-4 text-sm text-white/55">
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Maasai Mara
             </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Amboseli
-            </a>             
+            </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Lake Nakuru
             </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Nairobi
             </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Diani Beach
             </a>
           </li>
         </ul>
       </div>
 
-      {/* Contact */}
+      {/* =====================================================
+          CONTACT
+      ===================================================== */}
       <div>
         <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
           Contact Us
@@ -564,8 +693,9 @@ const About = () => {
             <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#FF4C9A]">
               Location
             </p>
+
             <p>
-              14199-00400
+              9058-00300
               <br />
               Nairobi, Kenya
             </p>
@@ -593,7 +723,7 @@ const About = () => {
               href="https://wincatetoursandtravels.com"
               target="_blank"
               rel="noreferrer"
-              className="transition hover:text-[#FF4C9A]"
+              className="break-all transition hover:text-[#FF4C9A]"
             >
               wincatetoursandtravels.com
             </a>
@@ -603,21 +733,27 @@ const About = () => {
       </div>
     </div>
 
-    
-
-    {/* Bottom Bar */}
-    <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/35 md:flex-row md:items-center md:justify-between">
+    {/* =====================================================
+        BOTTOM BAR
+    ===================================================== */}
+    <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-7 text-xs text-white/35 md:flex-row md:items-center md:justify-between">
 
       <p>
         © {new Date().getFullYear()} Wincate Tours & Travels. All rights reserved.
       </p>
 
       <div className="flex gap-5">
-        <a href="/" className="transition hover:text-[#FF4C9A]">
+        <a
+          href="/"
+          className="transition hover:text-[#FF4C9A]"
+        >
           Privacy Policy
         </a>
 
-        <a href="/" className="transition hover:text-[#FF4C9A]">
+        <a
+          href="/"
+          className="transition hover:text-[#FF4C9A]"
+        >
           Terms & Conditions
         </a>
       </div>

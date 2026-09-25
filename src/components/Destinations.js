@@ -7,112 +7,292 @@ import {
   X,
 } from "lucide-react";
 
-
+import mara3 from "../assets/mara3.jpg";
 import mara from "../assets/mara.jpg";
+import kenya1 from "../assets/kenya1.jpg";
+import abadare from "../assets/abadare.jpg";
+import africasafari from "../assets/africasafari.jpg";
+import hellsgate from "../assets/hellsgate.jpg";
+import watamu1 from "../assets/watamu1.jpg";
 import amboseli from "../assets/amboseli.jpg";
 import nakuru from "../assets/nakuru.jpg";
-import migration from "../assets/migration.jpg";
+import nakuru3 from "../assets/nakuru3.jpg";
+//import migration from "../assets/migration.jpg";
 import nairobi from "../assets/nairobi.jpg";
 import diani1 from "../assets/diani1.jpg";
+import diani5 from "../assets/diani5.jpg";
+import east from "../assets/east.jpg";
+import wilderbeast1 from "../assets/wilderbeast1.jpg";
 //import safariVehicle from "../assets/safari-vehicle.jpg";
 
 const Destinations = () => {
   const [selectedDestination, setSelectedDestination] = useState(null);
 
-  const destinations = [
-    {
-      name: "Maasai Mara",
-      region: "Southwestern Kenya",
-      category: "Wildlife Safari",
-      image: mara,
-      description:
-        "Experience Kenya's legendary wilderness, where vast savannahs, abundant wildlife and unforgettable safari moments come together.",
-      highlights: [
-        "Big Five encounters",
-        "Great Wildebeest Migration",
-        "Maasai cultural experiences",
-        "Hot-air balloon safaris",
-      ],
-    },
-    {
-      name: "Amboseli",
-      region: "Southern Kenya",
-      category: "Wildlife & Kilimanjaro Views",
-      image: amboseli,
-      description:
-        "Discover magnificent elephant herds against the spectacular backdrop of Mount Kilimanjaro.",
-      highlights: [
-        "Large elephant herds",
-        "Mount Kilimanjaro views",
-        "Game drives",
-        "African sunset experiences",
-      ],
-    },
-    {
-      name: "Lake Nakuru",
-      region: "Rift Valley",
-      category: "Wildlife & Birding",
-      image: nakuru,
-      description:
-        "Explore one of Kenya's iconic Rift Valley destinations, known for wildlife, dramatic landscapes and exceptional birdlife.",
-      highlights: [
-        "Rhino sightings",
-        "Bird watching",
-        "Lake views",
-        "Scenic Rift Valley landscapes",
-      ],
-    },
-    {
-      name: "Nairobi",
-      region: "Central Kenya",
-      category: "City & Wildlife",
-      image: nairobi,
-      description:
-        "Combine the energy of Kenya's capital with remarkable wildlife experiences just minutes from the city centre.",
-      highlights: [
-        "Nairobi National Park",
-        "Giraffe experiences",
-        "Cultural attractions",
-        "City tours",
-      ],
-    },
-    {
-      name: "Diani Beach",
-      region: "Kenya Coast",
-      category: "Beach Escape",
-      image: diani1,
-      description:
-        "Relax along Kenya's beautiful Indian Ocean coastline with white sandy beaches, warm waters and tropical experiences.",
-      highlights: [
-        "White sandy beaches",
-        "Indian Ocean",
-        "Water activities",
-        "Luxury beach resorts",
-      ],
-    },
-    {
-      name: "Great Migration",
-      region: "Maasai Mara",
-      category: "Seasonal Wildlife",
-      image: migration,
-      description:
-        "Witness one of nature's most spectacular wildlife events as millions of wildebeest and other animals move across the ecosystem.",
-      highlights: [
-        "Wildebeest migration",
-        "Predator encounters",
-        "River crossings",
-        "Seasonal game viewing",
-      ],
-    },
-  ];
+ const destinations = [
+  {
+    name: "Maasai Mara",
+    region: "Southwestern Kenya",
+    category: "Wildlife Safari",
+    image: mara3,
+    description:
+      "Experience Kenya's legendary wilderness, where vast savannahs, abundant wildlife and unforgettable safari moments come together.",
+    highlights: [
+      "Big Five encounters",
+      "Great Wildebeest Migration",
+      "Maasai cultural experiences",
+      "Hot-air balloon safaris",
+    ],
+  },
 
+  {
+    name: "Amboseli",
+    region: "Southern Kenya",
+    category: "Wildlife & Kilimanjaro Views",
+    image: amboseli,
+    description:
+      "Discover magnificent elephant herds against the spectacular backdrop of Mount Kilimanjaro.",
+    highlights: [
+      "Large elephant herds",
+      "Mount Kilimanjaro views",
+      "Game drives",
+      "African sunset experiences",
+    ],
+  },
+
+  {
+    name: "Lake Nakuru",
+    region: "Rift Valley",
+    category: "Wildlife & Birding",
+    image: nakuru3,
+    description:
+      "Explore one of Kenya's iconic Rift Valley destinations, known for wildlife, dramatic landscapes and exceptional birdlife.",
+    highlights: [
+      "Rhino sightings",
+      "Bird watching",
+      "Lake views",
+      "Scenic Rift Valley landscapes",
+    ],
+  },
+
+  {
+    name: "Nairobi",
+    region: "Central Kenya",
+    category: "City & Wildlife",
+    image: nairobi,
+    description:
+      "Combine the energy of Kenya's capital with remarkable wildlife experiences just minutes from the city centre.",
+    highlights: [
+      "Nairobi National Park",
+      "Giraffe experiences",
+      "Cultural attractions",
+      "City tours",
+    ],
+  },
+
+  {
+    name: "Diani Beach",
+    region: "Kenya Coast",
+    category: "Beach Escape",
+    image: diani1,
+    description:
+      "Relax along Kenya's beautiful Indian Ocean coastline with white sandy beaches, warm waters and tropical experiences.",
+    highlights: [
+      "White sandy beaches",
+      "Indian Ocean",
+      "Water activities",
+      "Luxury beach resorts",
+    ],
+  },
+
+  {
+    name: "Great Migration",
+    region: "Maasai Mara",
+    category: "Seasonal Wildlife",
+    image: wilderbeast1,
+    description:
+      "Witness one of nature's most spectacular wildlife events as millions of wildebeest and other animals move across the ecosystem.",
+    highlights: [
+      "Wildebeest migration",
+      "Predator encounters",
+      "River crossings",
+      "Seasonal game viewing",
+    ],
+  },
+
+  {
+    name: "Samburu",
+    region: "Northern Kenya",
+    category: "Wildlife & Culture",
+    image: africasafari,
+    description:
+      "Journey into Kenya's dramatic northern landscapes, where rugged scenery, unique wildlife and rich Samburu culture create an unforgettable safari experience.",
+    highlights: [
+      "Samburu Special Five",
+      "Samburu cultural experiences",
+      "Game drives",
+      "Dramatic northern landscapes",
+    ],
+  },
+
+  
+
+  {
+    name: "Tsavo West",
+    region: "Southeastern Kenya",
+    category: "Wildlife & Landscapes",
+    image: east,
+    description:
+      "Discover a diverse landscape of volcanic hills, lava flows, springs and wildlife within one of Kenya's most fascinating safari regions.",
+    highlights: [
+      "Mzima Springs",
+      "Elephant sightings",
+      "Volcanic landscapes",
+      "Wildlife photography",
+    ],
+  },
+
+  {
+    name: "Mount Kenya",
+    region: "Central Kenya",
+    category: "Mountain Adventure",
+    image: kenya1,
+    description:
+      "Experience the spectacular landscapes surrounding Mount Kenya through mountain adventures, scenic walks and wildlife experiences.",
+    highlights: [
+      "Mountain trekking",
+      "Scenic landscapes",
+      "High-altitude adventures",
+      "Wildlife experiences",
+    ],
+  },
+
+  {
+    name: "Laikipia",
+    region: "Central Kenya",
+    category: "Conservation & Wildlife",
+    image: mara,
+    description:
+      "Discover Kenya's Laikipia region, where private conservancies, wildlife conservation and authentic wilderness experiences come together.",
+    highlights: [
+      "Private conservancies",
+      "Wildlife conservation",
+      "Horseback experiences",
+      "Exclusive safari experiences",
+    ],
+  },
+
+  {
+    name: "Ol Pejeta",
+    region: "Laikipia",
+    category: "Wildlife & Conservation",
+    image: nakuru,
+    description:
+      "Explore one of Kenya's leading wildlife conservation destinations, offering memorable encounters and opportunities to learn about conservation.",
+    highlights: [
+      "Rhino conservation",
+      "Chimpanzee sanctuary",
+      "Big Five wildlife",
+      "Conservation experiences",
+    ],
+  },
+
+  {
+    name: "Lake Naivasha",
+    region: "Great Rift Valley",
+    category: "Nature & Adventure",
+    image: nakuru,
+    description:
+      "Enjoy the peaceful beauty of Lake Naivasha, surrounded by dramatic Rift Valley scenery and a variety of outdoor experiences.",
+    highlights: [
+      "Boat rides",
+      "Bird watching",
+      "Crescent Island",
+      "Rift Valley scenery",
+    ],
+  },
+
+  {
+    name: "Hell's Gate",
+    region: "Great Rift Valley",
+    category: "Adventure & Nature",
+    image: hellsgate,
+    description:
+      "Experience one of Kenya's most adventurous landscapes with dramatic cliffs, gorges, cycling routes and spectacular scenery.",
+    highlights: [
+      "Cycling adventures",
+      "Rock climbing",
+      "Hiking",
+      "Dramatic gorges",
+    ],
+  },
+
+  {
+    name: "Aberdare",
+    region: "Central Kenya",
+    category: "Forest & Wildlife",
+    image: abadare,
+    description:
+      "Escape into the cool highlands of the Aberdare region, known for lush forests, mountain scenery and diverse wildlife.",
+    highlights: [
+      "Mountain forests",
+      "Elephant sightings",
+      "Waterfalls",
+      "Highland landscapes",
+    ],
+  },
+
+  {
+    name: "Lamu",
+    region: "Kenya Coast",
+    category: "Culture & Beach",
+    image: diani5,
+    description:
+      "Step into the historic atmosphere of Lamu, where Swahili culture, traditional architecture and the Indian Ocean create a unique coastal escape.",
+    highlights: [
+      "Lamu Old Town",
+      "Swahili culture",
+      "Dhow sailing",
+      "Indian Ocean beaches",
+    ],
+  },
+
+  {
+    name: "Watamu",
+    region: "Kenya Coast",
+    category: "Beach & Marine Life",
+    image: watamu1,
+    description:
+      "Enjoy the beautiful coastline of Watamu with its white beaches, clear waters and diverse marine experiences.",
+    highlights: [
+      "Marine experiences",
+      "Snorkelling",
+      "White sandy beaches",
+      "Watamu Marine National Park",
+    ],
+  },
+
+  {
+    name: "Malindi",
+    region: "Kenya Coast",
+    category: "Beach & Culture",
+    image: diani1,
+    description:
+      "Discover Malindi's blend of tropical beaches, Swahili heritage, marine experiences and relaxed coastal atmosphere.",
+    highlights: [
+      "Indian Ocean beaches",
+      "Marine excursions",
+      "Swahili culture",
+      "Coastal relaxation",
+    ],
+  },
+];
   return (
     <div className="bg-[#FFF9F5] text-[#17151A]">
 
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative min-h-[480px] overflow-hidden bg-black">
+      <section className="relative min-h-[52vh] overflow-hidden bg-[#17151A]">
         <img
           src={mara}
           alt="Kenya safari destination"
@@ -148,24 +328,7 @@ const Destinations = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="/packages"
-                className="group inline-flex items-center gap-3 rounded-full bg-[#EC1676] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#D80F68]"
-              >
-                Explore Packages
-
-                <ArrowRight
-                  size={18}
-                  className="transition-transform group-hover:translate-x-1"
-                />
-              </a>
-
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-bold text-white backdrop-blur-md transition hover:bg-white hover:text-[#17151A]"
-              >
-                Plan Your Trip
-              </a>
+              
             </div>
 
           </div>
@@ -491,7 +654,7 @@ const Destinations = () => {
 
             <div className="overflow-hidden rounded-[2rem]">
               <img
-                src={migration}
+                src={wilderbeast1}
                 alt="Wildebeest Migration"
                 className="h-[420px] w-full object-cover transition duration-700 hover:scale-105"
               />
@@ -672,6 +835,8 @@ const Destinations = () => {
           </div>
         </div>
       )}
+
+  
 <footer className="bg-black text-white">
   {/* Footer Main */}
   <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
@@ -680,7 +845,7 @@ const Destinations = () => {
       {/* Brand */}
       <div>
         <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EC1676]">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EC1676] shadow-lg shadow-[#EC1676]/20">
             <span className="font-serif text-xl font-bold text-white">
               W
             </span>
@@ -690,6 +855,7 @@ const Destinations = () => {
             <h3 className="font-serif text-2xl font-bold">
               Wincate
             </h3>
+
             <p className="-mt-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#FF4C9A]">
               Tours & Travels
             </p>
@@ -702,34 +868,117 @@ const Destinations = () => {
           journey.
         </p>
 
-        {/* Social Icons */}
-        <div className="mt-6 flex gap-3">
+        {/* =====================================================
+            ANIMATED SOCIAL ICONS
+        ===================================================== */}
+       <div className="mt-7 flex gap-3">
+
+          {/* Facebook */}
           <a
-            href="wincate"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition hover:border-[#EC1676] hover:bg-[#EC1676] hover:text-white"
+            href="https://www.facebook.com/WincateToursAndTravels"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:rotate-3 hover:border-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:shadow-lg hover:shadow-[#1877F2]/30"
           >
-            f
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-5 w-5 transition-transform duration-300 group-hover:scale-110"
+            >
+              <path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v8h4v-8h3.5l.5-4H13V9c0-.67.33-1 1-1Z" />
+            </svg>
+          </a>
+          {/* TikTok */}
+          <a
+         href="https://www.Tiktok.com/WincateToursAndTravels"
+    target="_blank"
+    rel="noreferrer"
+    aria-label="TikTok"
+    className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:rotate-3 hover:border-[#FF0050] hover:bg-black hover:text-white hover:shadow-lg hover:shadow-[#FF0050]/30"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+    >
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-3.88V2h-3.54v13.5a2.91 2.91 0 1 1-2-2.76v-3.6a6.45 6.45 0 1 0 5.54 6.36V8.67a8.3 8.3 0 0 0 4.86 1.56V6.69h-1.09Z" />
+    </svg>
+  </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/WincateToursAndTravels"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:-rotate-3 hover:border-[#E4405F] hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E4405F] hover:to-[#FCAF45] hover:text-white hover:shadow-lg hover:shadow-[#E4405F]/30"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              className="h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+              />
+
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              />
+
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
           </a>
 
-          <a
-            href="wincate"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition hover:border-[#EC1676] hover:bg-[#EC1676] hover:text-white"
-          >
-            ◎
-          </a>
-
+          {/* WhatsApp */}
           <a
             href="https://wa.me/254724938419"
             target="_blank"
             rel="noreferrer"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition hover:border-[#EC1676] hover:bg-[#EC1676] hover:text-white"
+            aria-label="WhatsApp"
+            className="group flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/60 transition-all duration-300 hover:-translate-y-2 hover:rotate-3 hover:border-[#25D366] hover:bg-[#25D366] hover:text-white hover:shadow-lg hover:shadow-[#25D366]/30"
           >
-            W
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+            >
+              <path d="M20.52 3.48A11.78 11.78 0 0 0 12.03 0C5.53 0 .24 5.29.24 11.79c0 2.08.54 4.11 1.56 5.9L.17 24l6.46-1.69a11.76 11.76 0 0 0 5.4 1.3h.01c6.49 0 11.78-5.29 11.78-11.79 0-3.14-1.22-6.1-3.3-8.34ZM12.04 21.6h-.01a9.78 9.78 0 0 1-4.98-1.36l-.36-.21-3.84 1 1.03-3.74-.24-.38a9.78 9.78 0 1 1 8.4 4.69Zm5.36-7.33c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.19 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.72-.7 1.96-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z" />
+            </svg>
           </a>
+
+
+
+        </div>
+
+        {/* Small animated line */}
+        <div className="mt-6 flex items-center gap-3">
+          <span className="h-px w-10 bg-[#EC1676]" />
+
+          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/30">
+            Follow Wincate
+          </span>
         </div>
       </div>
 
-      {/* Quick Links */}
+      {/* =====================================================
+          QUICK LINKS
+      ===================================================== */}
       <div>
         <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
           Explore
@@ -737,38 +986,60 @@ const Destinations = () => {
 
         <ul className="space-y-4 text-sm text-white/55">
           <li>
-            <a href="/" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Home
             </a>
           </li>
 
           <li>
-            <a href="/about" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/about"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               About Us
             </a>
           </li>
 
           <li>
-            <a href="/services" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/services"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Services
             </a>
           </li>
 
           <li>
-            <a href="/packages" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/packages"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Safari Packages
             </a>
           </li>
 
           <li>
-            <a href="/contact" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/contact"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Contact Us
             </a>
           </li>
         </ul>
       </div>
 
-      {/* Destinations */}
+      {/* =====================================================
+          DESTINATIONS
+      ===================================================== */}
       <div>
         <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
           Destinations
@@ -776,38 +1047,60 @@ const Destinations = () => {
 
         <ul className="space-y-4 text-sm text-white/55">
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Maasai Mara
             </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Amboseli
-            </a>             
+            </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Lake Nakuru
             </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Nairobi
             </a>
           </li>
 
           <li>
-            <a href="/Destinations" className="transition hover:text-[#FF4C9A]">
+            <a
+              href="/Destinations"
+              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+            >
+              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
               Diani Beach
             </a>
           </li>
         </ul>
       </div>
 
-      {/* Contact */}
+      {/* =====================================================
+          CONTACT
+      ===================================================== */}
       <div>
         <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
           Contact Us
@@ -819,8 +1112,9 @@ const Destinations = () => {
             <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#FF4C9A]">
               Location
             </p>
+
             <p>
-              14199-00400
+              9058-00300
               <br />
               Nairobi, Kenya
             </p>
@@ -848,7 +1142,7 @@ const Destinations = () => {
               href="https://wincatetoursandtravels.com"
               target="_blank"
               rel="noreferrer"
-              className="transition hover:text-[#FF4C9A]"
+              className="break-all transition hover:text-[#FF4C9A]"
             >
               wincatetoursandtravels.com
             </a>
@@ -858,21 +1152,27 @@ const Destinations = () => {
       </div>
     </div>
 
-    
-
-    {/* Bottom Bar */}
-    <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/35 md:flex-row md:items-center md:justify-between">
+    {/* =====================================================
+        BOTTOM BAR
+    ===================================================== */}
+    <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-7 text-xs text-white/35 md:flex-row md:items-center md:justify-between">
 
       <p>
         © {new Date().getFullYear()} Wincate Tours & Travels. All rights reserved.
       </p>
 
       <div className="flex gap-5">
-        <a href="/" className="transition hover:text-[#FF4C9A]">
+        <a
+          href="/"
+          className="transition hover:text-[#FF4C9A]"
+        >
           Privacy Policy
         </a>
 
-        <a href="/" className="transition hover:text-[#FF4C9A]">
+        <a
+          href="/"
+          className="transition hover:text-[#FF4C9A]"
+        >
           Terms & Conditions
         </a>
       </div>
