@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
-  ArrowRight,  ChevronLeft,  ChevronRight,  MapPin,  Plane,  Car,  Hotel,  Compass,  ShieldCheck,  Star,  Phone,  MessageCircle,  CheckCircle2,} from "lucide-react";
+  ArrowRight,  ChevronLeft,  ChevronRight,  MapPin,      Compass,  ShieldCheck,  Star,  Phone,  MessageCircle,  CheckCircle2,} from "lucide-react";
 
 // Images
 //import mara from "../assets/mara.jpg";
+import mara1 from "../assets/mara1.jpg";
 import mara2 from "../assets/mara2.jpg";
+import cruiser1 from "../assets/cruiser1.jpg";
 import amboseli from "../assets/amboseli.jpg";
 import nakuru from "../assets/nakuru.jpg";
 import wilderbeast1 from "../assets/wilderbeast1.jpg";
@@ -295,73 +297,327 @@ export default function Home() {
       {/* =========================================================
           SERVICES
       ========================================================== */}
-      <section className="bg-white px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
-              What We Do
-            </span>
+    
+{/* =========================================================
+    WHAT WE DO — COMPLETE TRAVEL SERVICES
+========================================================= */}
 
-            <h2 className="mt-3 font-serif text-4xl font-bold sm:text-5xl">
-              Everything you need for
-              <span className="text-[#EC1676]"> your journey.</span>
-            </h2>
-          </div>
+<section className="bg-white px-6 py-20 lg:px-8 lg:py-28">
+  <div className="mx-auto max-w-7xl">
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                icon: Compass,
-                title: "Tours & Safaris",
-                text: "Explore Kenya through unforgettable wildlife and adventure experiences.",
-              },
-              {
-                icon: Plane,
-                title: "Airport Transfers",
-                text: "Reliable and convenient airport transfers to start your journey smoothly.",
-              },
-              {
-                icon: Car,
-                title: "Car Hire",
-                text: "Comfortable transport solutions for business, leisure and adventure.",
-              },
-              {
-                icon: Hotel,
-                title: "Hotel Bookings",
-                text: "Find comfortable accommodation that fits your itinerary and budget.",
-              },
-            ].map((service) => {
-              const Icon = service.icon;
+    {/* HEADER */}
+    <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
 
-              return (
-                <div
-                  key={service.title}
-                  className="group rounded-3xl border border-gray-100 bg-[#FFF9FC] p-7 transition duration-300 hover:-translate-y-2 hover:border-pink-100 hover:shadow-xl"
-                >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-pink-100 text-[#EC1676] transition group-hover:bg-[#EC1676] group-hover:text-white">
-                    <Icon size={25} />
-                  </div>
+      <div className="max-w-3xl">
+        <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#EC1676]">
+          What We Do
+        </span>
 
-                  <h3 className="mt-6 text-xl font-bold">
-                    {service.title}
-                  </h3>
+        <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+          Complete travel solutions
+          <span className="block text-[#EC1676]">
+            under one roof.
+          </span>
+        </h2>
+      </div>
 
-                  <p className="mt-3 text-sm leading-7 text-gray-500">
-                    {service.text}
-                  </p>
+      <p className="max-w-xl text-sm leading-7 text-gray-500 lg:text-right">
+        From documentation and ticketing to accommodation, transport,
+        holidays and international travel, Wincate Tours & Travels helps
+        you organise the important parts of your journey from one place.
+      </p>
 
-                  <a
-                    href="/contact"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#EC1676]"
-                  >
-                    Learn More <ArrowRight size={16} />
-                  </a>
-                </div>
-              );
-            })}
-          </div>
+    </div>
+
+
+    {/* SERVICE GRID */}
+    <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
+      {/* VISA APPLICATION */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src= "https://img.post.edu.pe/images/2026/02/gather-all-required-documents-before-visiting-a-peruvian-consulate.jpg"
+          alt="Visa application and travel documentation"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Travel Documentation
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Visa Applications
+          </h3>
+
+          <p className="mt-3 max-w-md text-sm leading-6 text-white/70">
+            Assistance with visa application processes, supporting
+            documentation and travel preparation for international journeys.
+          </p>
         </div>
-      </section>
+      </div>
+
+
+      {/* PASSPORT */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src= "https://static.wixstatic.com/media/6476c8_05828c71ee1b434da8e57842a26a8300~mv2.jpg/v1/fill/w_1200%2Ch_675%2Cal_c%2Cq_85/6476c8_05828c71ee1b434da8e57842a26a8300~mv2.jpg"
+          alt="Passport processing"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Documentation
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Passport Processing
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Support for new passport applications, renewals, replacements
+            and other passport-related travel documentation processes.
+          </p>
+        </div>
+      </div>
+
+
+      {/* FLIGHT TICKETING */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=90"
+          alt="Flight booking and ticketing"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Air Travel
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Flight Booking & Ticketing
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Domestic and international flight arrangements including
+            one-way, return and group travel bookings.
+          </p>
+        </div>
+      </div>
+
+
+      {/* HOTEL BOOKINGS */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=90"
+          alt="Hotel bookings"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Accommodation
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Hotel Bookings
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Hotel, resort and safari lodge bookings for holidays, business
+            trips, family travel and international journeys.
+          </p>
+        </div>
+      </div>
+
+
+      {/* TOURS & SAFARIS */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src={mara1}
+          alt="Kenya tours and safaris"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Kenya Experiences
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Tours & Safaris
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Discover Kenya through wildlife safaris, excursions, adventure,
+            culture and tailor-made travel experiences.
+          </p>
+        </div>
+      </div>
+
+
+      {/* AIRPORT TRANSFERS */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src="https://cms.transfer.com.br/storage/9eVnGO2cVIWfYVkpcn6VYa67TdQjk5-metaQ2hhdEdQVCBJbWFnZSBNYXkgMTcsIDIwMjYsIDEyXzQxXzQ3IFBNLnBuZw%3D%3D-.webp"
+          alt="Airport transfer services"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Ground Transport
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Airport Transfers
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Convenient airport pick-ups and drop-offs designed to make your
+            arrival and departure smooth and stress-free.
+          </p>
+        </div>
+      </div>
+
+
+      {/* CAR HIRE */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src={cruiser1}
+          alt="Car hire services"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Mobility
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Car Hire
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Flexible vehicle solutions for business, leisure, excursions,
+            road trips and personal travel requirements.
+          </p>
+        </div>
+      </div>
+
+
+      {/* STUDENT & JOB TRAVEL */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=90"
+          alt="Student and work travel"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            Opportunity Travel
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Student & Job Travel
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Travel arrangements for students, study programmes, employment
+            opportunities, interviews and work-related journeys.
+          </p>
+        </div>
+      </div>
+
+
+      {/* MOMBASA */}
+      
+
+
+      {/* DUBAI */}
+      <div className="group relative h-[420px] overflow-hidden rounded-[2rem]">
+        <img
+          src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=90"
+          alt="Dubai holiday destination"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 text-white">
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+            International
+          </span>
+
+          <h3 className="mt-2 font-serif text-3xl font-bold">
+            Dubai
+          </h3>
+
+          <p className="mt-3 text-sm leading-6 text-white/70">
+            Plan Dubai holidays with flights, accommodation, city
+            experiences, shopping, desert adventures and more.
+          </p>
+        </div>
+      </div>
+
+
+      
+
+    </div>
+
+
+    {/* BOTTOM SERVICE STATEMENT */}
+    <div className="mt-12 flex flex-col justify-between gap-6 rounded-[2rem] bg-[#17151A] p-7 text-white sm:p-9 lg:flex-row lg:items-center">
+
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+          One Travel Partner
+        </p>
+
+        <h3 className="mt-2 font-serif text-2xl font-bold sm:text-3xl">
+          From documentation to destination.
+        </h3>
+
+        <p className="mt-2 max-w-2xl text-sm leading-7 text-white/50">
+          Whether you are travelling locally or internationally, Wincate
+          can help coordinate the essential parts of your journey.
+        </p>
+      </div>
+
+      <a
+        href="/contact"
+        className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#EC1676] px-7 py-4 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#D80F68]"
+      >
+        Plan Your Journey
+        <ArrowRight size={18} />
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
 
       {/* =========================================================
           FEATURED SAFARIS

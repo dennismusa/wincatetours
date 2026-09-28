@@ -4,6 +4,7 @@ import nairobi from "../assets/nairobi.jpg";
 import kenya from "../assets/kenya.jpg";
 import image17 from "../assets/image17.jpg";
 import team from "../assets/team.jpg";
+
 import {
   ArrowRight,
   CalendarCheck,
@@ -11,14 +12,16 @@ import {
   MessageCircle,
   Phone,
   ShieldCheck,
+  Plane,
+  FileText,
+  GraduationCap,
+  Hotel,
+  Globe,
+  MapPin,
+  Briefcase,
 } from "lucide-react";
 
 const Services = () => {
-  /*
-   * ONLINE IMAGES
-   * No local image files are required for this page.
-   */
-
   const images = {
     hero:
       "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85",
@@ -41,17 +44,38 @@ const Services = () => {
     hotel:
       "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=90",
 
-
     airport:
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=85",
-
-    
 
     beach:
       "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1400&q=85",
 
     travelPlanning:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=85",
+
+    ticketing:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=90",
+
+    visa:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=90",
+
+    passport:
+      "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=90",
+
+    student:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=90",
+
+    international:
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=90",
+
+    dubai:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=90",
+
+    zanzibar:
+      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1600&q=90",
+
+    mombasa:
+      "https://images.unsplash.com/photo-1590845947676-fa2576f401d2?auto=format&fit=crop&w=1600&q=90",
   };
 
   const services = [
@@ -60,7 +84,7 @@ const Services = () => {
       title: "Tours & Safaris",
       category: "Wildlife & Adventure",
       description:
-        "Discover Kenya through carefully planned wildlife safaris, private tours, group adventures and unforgettable experiences.",
+        "Discover Kenya and East Africa through carefully planned wildlife safaris, private tours, group adventures and tailor-made journeys.",
       image: kenya,
       features: [
         "Maasai Mara safaris",
@@ -69,73 +93,54 @@ const Services = () => {
         "Custom itineraries",
       ],
     },
-
     {
       number: "02",
-      title: "Nairobi National Park",
-      category: "Nairobi Excursion",
+      title: "Flight Ticketing",
+      category: "Domestic & International",
       description:
-        "Experience wildlife just outside Nairobi with a memorable game-drive excursion through one of Kenya's most unique urban safari destinations.",
-      image: images.nairobiNationalPark,
+        "Book convenient domestic and international flights with itinerary support for holidays, business travel, students, families and groups.",
+      image: images.ticketing,
       features: [
-        "Game drives",
-        "Wildlife viewing",
-        "Private excursions",
-        "Flexible schedules",
+        "Domestic flights",
+        "International flights",
+        "One-way & return tickets",
+        "Multi-city itineraries",
       ],
     },
-
     {
       number: "03",
-      title: "Giraffe Centre",
-      category: "Wildlife Experience",
+      title: "Visa Assistance",
+      category: "Travel Documentation",
       description:
-        "Enjoy a close-up wildlife experience at the Giraffe Centre, ideal for families, couples, groups and visitors exploring Nairobi.",
-      image: images.giraffeCentre,
+        "Get practical assistance preparing your visa application requirements and organizing the documentation needed for your intended destination.",
+      image: images.visa,
       features: [
-        "Giraffe encounters",
-        "Family excursions",
-        "Nairobi day trips",
-        "Flexible transport",
+        "Visa application guidance",
+        "Document checklist support",
+        "Application preparation",
+        "Travel requirement guidance",
       ],
     },
-
     {
       number: "04",
-      title: "Camp Ndunda",
-      category: "Nature & Adventure",
+      title: "Passport Services",
+      category: "Documentation Support",
       description:
-        "Escape into nature with an outdoor adventure at Camp Ndunda, combining beautiful surroundings with exciting activities.",
-      image: images.campNdunda,
+        "Receive guidance on passport application and processing requirements so you can prepare your travel documents correctly.",
+      image: images.passport,
       features: [
-        "Nature experiences",
-        "Outdoor activities",
-        "Group trips",
-        "Adventure escapes",
+        "Passport application guidance",
+        "Document preparation",
+        "Application information",
+        "Travel document support",
       ],
     },
-
     {
       number: "05",
-      title: "Team Building",
-      category: "Corporate & Groups",
-      description:
-        "Take your team outside the office with professionally coordinated team-building trips, outdoor activities, transport and accommodation.",
-      image: team,
-      features: [
-        "Corporate outings",
-        "Team activities",
-        "Group transport",
-        "Trip coordination",
-      ],
-    },
-
-    {
-      number: "06",
       title: "Hotel Bookings",
       category: "Accommodation",
       description:
-        "Find comfortable accommodation that matches your destination, travel style and budget, from city hotels to safari lodges and beach resorts.",
+        "Find suitable hotels, safari lodges, camps and beach resorts according to your destination, travel style, group size and budget.",
       image: images.hotel,
       features: [
         "Hotels & lodges",
@@ -144,13 +149,26 @@ const Services = () => {
         "Accommodation planning",
       ],
     },
-
+    {
+      number: "06",
+      title: "Student Travel",
+      category: "Students & Young Travellers",
+      description:
+        "Travel planning support for students looking for study-related travel, internships, educational trips and international opportunities.",
+      image: images.student,
+      features: [
+        "Student travel planning",
+        "Study-related travel",
+        "Internship travel support",
+        "Flight & accommodation guidance",
+      ],
+    },
     {
       number: "07",
       title: "Airport Transfers",
       category: "Transport",
       description:
-        "Start and end your journey comfortably with reliable airport transfers between Nairobi's airports, hotels and other destinations.",
+        "Start and end your journey comfortably with reliable airport transfers between Nairobi airports, hotels and other destinations.",
       image: images.airport,
       features: [
         "Airport pickups",
@@ -159,13 +177,12 @@ const Services = () => {
         "Professional service",
       ],
     },
-
     {
       number: "08",
       title: "Car Hire",
       category: "Vehicle Services",
       description:
-        "Choose a convenient vehicle solution for business, leisure, road trips and exploring Kenya at your own pace.",
+        "Choose convenient vehicle solutions for business, leisure, road trips, airport transfers and exploring Kenya at your own pace.",
       image: serengeti1,
       features: [
         "Flexible vehicle options",
@@ -174,45 +191,130 @@ const Services = () => {
         "Chauffeur services",
       ],
     },
-
     {
       number: "09",
+      title: "International Travel",
+      category: "Global Travel",
+      description:
+        "Plan journeys beyond Kenya with assistance covering flights, accommodation, documentation, destination planning and travel coordination.",
+      image: images.international,
+      features: [
+        "International destinations",
+        "Travel planning",
+        "Flights & accommodation",
+        "Documentation guidance",
+      ],
+    },
+    {
+      number: "10",
       title: "Beach Holidays",
       category: "Coastal Escapes",
       description:
-        "Relax along Kenya's beautiful coast with carefully arranged beach holidays, accommodation, transfers and coastal experiences.",
+        "Enjoy memorable coastal holidays with accommodation, transport, excursions and carefully arranged beach experiences.",
       image: images.beach,
       features: [
+        "Mombasa",
         "Diani Beach",
-        "Beach resorts",
+        "Zanzibar",
         "Coastal excursions",
-        "Holiday planning",
       ],
     },
+    {
+      number: "11",
+      title: "Nairobi Excursions",
+      category: "Local Experiences",
+      description:
+        "Explore Nairobi's wildlife and attractions through flexible day trips and professionally coordinated excursions.",
+      image: images.nairobiNationalPark,
+      features: [
+        "Nairobi National Park",
+        "Giraffe Centre",
+        "City excursions",
+        "Private & group trips",
+      ],
+    },
+    {
+      number: "12",
+      title: "Team Building",
+      category: "Corporate & Groups",
+      description:
+        "Take your team outside the office with coordinated team-building activities, transport, accommodation and group experiences.",
+      image: team,
+      features: [
+        "Corporate outings",
+        "Team activities",
+        "Group transport",
+        "Trip coordination",
+      ],
+    },
+  ];
 
-    
+  const internationalDestinations = [
+    {
+      title: "Dubai",
+      category: "International Escape",
+      image: images.dubai,
+      description:
+        "Plan an exciting Dubai journey combining flights, accommodation, city experiences and travel coordination.",
+      points: [
+        "Flight booking",
+        "Hotel arrangements",
+        "Travel planning",
+        "City experiences",
+      ],
+    },
+    {
+      title: "Zanzibar",
+      category: "Island Holiday",
+      image: images.zanzibar,
+      description:
+        "Experience the beaches, culture and tropical atmosphere of Zanzibar with a coordinated holiday package.",
+      points: [
+        "Beach holidays",
+        "Hotels & resorts",
+        "Flight arrangements",
+        "Island experiences",
+      ],
+    },
+    {
+      title: "Mombasa",
+      category: "Kenya Coast",
+      image: images.mombasa,
+      description:
+        "Enjoy Kenya's coast through beach holidays, hotel stays, excursions, transfers and customized travel plans.",
+      points: [
+        "Beach resorts",
+        "Hotel bookings",
+        "Coastal excursions",
+        "Airport transfers",
+      ],
+    },
   ];
 
   const benefits = [
     {
       number: "01",
-      title: "Reliable Service",
-      text: "We focus on dependable arrangements and clear communication throughout your journey.",
+      title: "One Travel Partner",
+      text:
+        "Bring your flights, accommodation, documentation, transport and experiences together through one travel team.",
     },
     {
       number: "02",
       title: "Local Knowledge",
-      text: "Our understanding of Kenya helps you discover destinations and experiences suited to your trip.",
+      text:
+        "Our understanding of Kenya helps you discover destinations and experiences suited to your trip.",
     },
     {
       number: "03",
       title: "Flexible Planning",
-      text: "Your trip can be adjusted around your schedule, interests, group size and travel requirements.",
+      text:
+        "Your arrangements can be shaped around your schedule, interests, group size and travel requirements.",
     },
     {
       number: "04",
       title: "Personal Support",
-      text: "From your first enquiry to the end of your journey, our team is available to assist.",
+      text:
+        "From your first enquiry to your journey, our team remains available to help coordinate your travel.",
     },
   ];
 
@@ -220,154 +322,211 @@ const Services = () => {
     {
       number: "01",
       title: "Tell Us Your Plans",
-      text: "Share your destination, dates, interests and travel requirements with our team.",
+      text:
+        "Share your destination, dates, interests, documents or travel requirements with our team.",
     },
     {
       number: "02",
-      title: "We Plan Your Trip",
-      text: "We'll help arrange transport, accommodation, activities and experiences around your needs.",
+      title: "We Organize",
+      text:
+        "We help coordinate flights, accommodation, transport, experiences and other travel arrangements.",
     },
     {
       number: "03",
-      title: "Enjoy Your Journey",
-      text: "Travel with confidence knowing that your arrangements have been carefully coordinated.",
+      title: "Travel With Confidence",
+      text:
+        "Receive your arrangements and travel with the support of a dedicated travel partner.",
     },
+  ];
+
+  const documentation = [
+    "Visa application guidance",
+    "Passport processing guidance",
+    "Travel document checklists",
+    "Destination requirement guidance",
+    "Flight and accommodation coordination",
+    "General pre-travel preparation",
+  ];
+
+  const studentServices = [
+    "Student flight ticketing",
+    "Study-related travel planning",
+    "Internship travel support",
+    "Accommodation guidance",
+    "Airport transfer arrangements",
+    "Travel document guidance",
   ];
 
   return (
     <main className="bg-white text-[#17151A]">
-
       {/* =====================================================
           HERO
       ===================================================== */}
-      <section className="relative min-h-[52vh] overflow-hidden bg-[#17151A]">
-
+      <section className="relative min-h-[72vh] overflow-hidden bg-[#17151A]">
         <img
           src={image17}
-          alt="Kenya safari experience"
+          alt="Wincate Tours and Travels"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#17151A]/95 via-[#17151A]/65 to-[#17151A]/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#17151A]/95 via-[#17151A]/70 to-[#17151A]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/95 via-transparent to-transparent" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/90 via-transparent to-transparent" />
-
-        <div className="relative mx-auto flex min-h-[70vh] max-w-7xl items-end px-6 pb-16 pt-32 sm:px-8 lg:px-10">
-
+        <div className="relative mx-auto flex min-h-[72vh] max-w-7xl items-end px-6 pb-16 pt-32 sm:px-8 lg:px-10">
           <div className="max-w-4xl">
-
             <div className="mb-5 flex items-center gap-3">
               <span className="h-[2px] w-10 bg-[#EC1676]" />
-
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
-                Our Services
+                Wincate Tours & Travels
               </span>
             </div>
 
-            <h1 className="font-serif text-5xl font-bold leading-[1.03] text-white sm:text-6xl lg:text-7xl">
-              Travel.
+            <h1 className="font-serif text-5xl font-bold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+              Everything You Need
               <br />
-
-              <span className="text-[#FF72AC]">
-                Explore. Experience.
-              </span>
+              <span className="text-[#FF72AC]">To Travel Further.</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
-              From Nairobi excursions and wildlife safaris to hotel bookings,
-              airport transfers, car hire and team-building adventures,
-              Wincate Tours & Travels helps you experience Kenya with ease.
+              From safaris and local excursions to visa assistance, passport
+              support, flight ticketing, hotel bookings, student travel and
+              international journeys, Wincate helps bring your travel plans
+              together.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#EC1676] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#D80F68] hover:shadow-2xl"
+              >
+                Start Planning
+                <ArrowRight size={17} />
+              </a>
 
-              
-
+              <a
+                href="https://wa.me/254724938419"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-3 rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-bold text-white backdrop-blur-md transition hover:-translate-y-1 hover:bg-white hover:text-[#17151A]"
+              >
+                <MessageCircle size={18} />
+                WhatsApp Us
+              </a>
             </div>
-
           </div>
-
         </div>
       </section>
 
+      {/* =====================================================
+          SERVICE PILLARS
+      ===================================================== */}
+      <section className="border-b border-gray-100 bg-white py-7">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-3 px-6 sm:grid-cols-3 lg:grid-cols-6 lg:px-10">
+          {[
+            {
+              icon: Plane,
+              title: "Ticketing",
+            },
+            {
+              icon: FileText,
+              title: "Visa Support",
+            },
+            {
+              icon: Briefcase,
+              title: "Passport",
+            },
+            {
+              icon: Hotel,
+              title: "Hotels",
+            },
+            {
+              icon: GraduationCap,
+              title: "Student Travel",
+            },
+            {
+              icon: Globe,
+              title: "International",
+            },
+          ].map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <a
+                href="/contact"
+                key={item.title}
+                className="group flex items-center gap-3 rounded-2xl bg-[#FFF9F5] p-4 transition hover:-translate-y-1 hover:bg-[#EC1676]"
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#EC1676]/10 text-[#EC1676] transition group-hover:bg-white/20 group-hover:text-white">
+                  <Icon size={18} />
+                </span>
+
+                <span className="text-xs font-bold text-[#17151A] group-hover:text-white">
+                  {item.title}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
 
       {/* =====================================================
           INTRO
       ===================================================== */}
       <section className="relative overflow-hidden bg-[#FFF9F5] py-20 sm:py-24">
-
         <div className="absolute -right-32 top-0 h-80 w-80 rounded-full bg-[#EC1676]/10 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
-          <div className="mx-auto max-w-3xl text-center">
-
+          <div className="mx-auto max-w-4xl text-center">
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
-              Explore With Wincate
+              Complete Travel Solutions
             </span>
 
-            <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
+            <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
               More Than Just
               <span className="text-[#EC1676]"> Travel</span>
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-gray-600">
-              Whether you are looking for a wildlife adventure, a Nairobi
-              excursion, accommodation, transport or a memorable group
-              experience, we bring the essential pieces of your journey
-              together.
+            <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
+              Whether you are planning a safari, booking a flight, applying
+              for a visa, processing a passport, arranging accommodation,
+              planning a student journey or travelling internationally,
+              Wincate Tours & Travels provides practical travel support from
+              planning to departure.
             </p>
-
           </div>
-
         </div>
       </section>
 
-
       {/* =====================================================
-          SERVICES GRID
+          MAIN SERVICES
       ===================================================== */}
       <section className="bg-white py-20 sm:py-24 lg:py-28">
-
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
           <div className="mb-14 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-
-            <div className="max-w-2xl">
-
+            <div className="max-w-3xl">
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
                 What We Offer
               </span>
 
               <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
-                Services Designed
-                <span className="text-[#EC1676]"> Around You</span>
+                Travel Services
+                <span className="text-[#EC1676]"> Built Around You</span>
               </h2>
-
             </div>
 
             <p className="max-w-xl text-sm leading-7 text-gray-500">
-              From wildlife and nature experiences to accommodation,
-              transportation and corporate activities, explore the services
-              available through Wincate Tours & Travels.
+              From travel documents and flights to safaris, accommodation,
+              transport and international travel, explore our core services.
             </p>
-
           </div>
 
-
-          {/* IMAGE SERVICE CARDS */}
           <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-
             {services.map((service) => (
-
               <article
                 key={service.number}
                 className="group overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-sm transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
               >
-
-                {/* IMAGE */}
-                <div className="relative h-[310px] overflow-hidden">
-
+                <div className="relative h-[300px] overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -375,14 +534,13 @@ const Services = () => {
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/90 via-[#17151A]/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/95 via-[#17151A]/20 to-transparent" />
 
                   <div className="absolute left-5 top-5 flex h-11 w-11 items-center justify-center rounded-full bg-[#EC1676] text-sm font-black text-white shadow-xl">
                     {service.number}
                   </div>
 
-                  <div className="absolute bottom-5 left-6">
-
+                  <div className="absolute bottom-5 left-6 right-6">
                     <span className="rounded-full bg-white/15 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-md">
                       {service.category}
                     </span>
@@ -390,28 +548,20 @@ const Services = () => {
                     <h3 className="mt-3 font-serif text-2xl font-bold text-white">
                       {service.title}
                     </h3>
-
                   </div>
-
                 </div>
 
-
-                {/* CONTENT */}
                 <div className="p-7">
-
                   <p className="text-sm leading-7 text-gray-600">
                     {service.description}
                   </p>
 
                   <div className="mt-6 space-y-3">
-
                     {service.features.map((feature) => (
-
                       <div
                         key={feature}
                         className="flex items-center gap-3"
                       >
-
                         <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EC1676]/10">
                           <Check
                             size={13}
@@ -422,11 +572,8 @@ const Services = () => {
                         <span className="text-sm font-semibold text-gray-700">
                           {feature}
                         </span>
-
                       </div>
-
                     ))}
-
                   </div>
 
                   <a
@@ -436,40 +583,383 @@ const Services = () => {
                     Enquire Now
                     <ArrowRight size={16} />
                   </a>
-
                 </div>
-
               </article>
-
             ))}
-
           </div>
-
         </div>
       </section>
 
+      {/* =====================================================
+          VISA + PASSPORT
+      ===================================================== */}
+      <section className="bg-[#17151A] py-20 sm:py-24 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="relative overflow-hidden rounded-[2.5rem]">
+              <img
+                src={images.visa}
+                alt="Visa application and travel documentation"
+                loading="lazy"
+                className="h-[520px] w-full object-cover transition duration-700 hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/90 via-[#17151A]/10 to-transparent" />
+
+              <div className="absolute bottom-7 left-7 right-7">
+                <div className="rounded-2xl border border-white/20 bg-black/25 p-5 backdrop-blur-md">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF72AC]">
+                    Travel Documentation
+                  </p>
+
+                  <p className="mt-2 font-serif text-2xl font-bold text-white">
+                    Prepare Your Documents With Confidence
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
+                Visa & Passport Support
+              </span>
+
+              <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-white sm:text-5xl">
+                Your Documents.
+                <br />
+                <span className="text-[#FF72AC]">
+                  Your Journey.
+                </span>
+              </h2>
+
+              <p className="mt-6 text-base leading-8 text-white/60">
+                Preparing to travel internationally? Wincate can help you
+                understand the documentation and application requirements
+                associated with your intended destination.
+              </p>
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {documentation.map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#EC1676] text-white">
+                      <Check size={14} />
+                    </span>
+
+                    <span className="text-sm font-semibold text-white/80">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 rounded-2xl border border-[#EC1676]/30 bg-[#EC1676]/10 p-5">
+                <p className="text-xs leading-6 text-white/60">
+                  <strong className="text-white">
+                    Important:
+                  </strong>{" "}
+                  Visa and passport approvals are determined by the relevant
+                  government, embassy, immigration or passport authority.
+                  Wincate provides travel guidance and application support but
+                  cannot guarantee approval.
+                </p>
+              </div>
+
+              <a
+                href="/contact"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#EC1676] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#D80F68]"
+              >
+                Get Documentation Support
+                <ArrowRight size={17} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* =====================================================
-          NAIROBI EXPERIENCES
+          FLIGHT TICKETING
       ===================================================== */}
-      <section className="bg-[#FFF9F5] py-20 sm:py-24">
-
+      <section className="bg-[#FFF9F5] py-20 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
-          <div className="grid overflow-hidden rounded-[2.5rem] bg-[#17151A] lg:grid-cols-2">
-
-            <div className="relative min-h-[450px]">
-
+          <div className="grid overflow-hidden rounded-[2.5rem] bg-white shadow-xl lg:grid-cols-2">
+            <div className="relative min-h-[500px]">
               <img
-                src={nairobi}
-                alt="Giraffe at Nairobi National Park"
+                src={images.ticketing}
+                alt="Flight ticketing service"
+                loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/80 via-transparent to-transparent" />
 
               <div className="absolute bottom-7 left-7">
+                <span className="rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-white">
+                  Flight Ticketing
+                </span>
+              </div>
+            </div>
 
+            <div className="flex items-center p-8 sm:p-12 lg:p-16">
+              <div>
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EC1676]/10">
+                  <Plane size={25} className="text-[#EC1676]" />
+                </div>
+
+                <span className="mt-7 block text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
+                  Fly With Ease
+                </span>
+
+                <h2 className="mt-3 font-serif text-4xl font-bold leading-tight sm:text-5xl">
+                  Flight Booking
+                  <span className="text-[#EC1676]">
+                    {" "}
+                    Made Simple.
+                  </span>
+                </h2>
+
+                <p className="mt-6 text-base leading-8 text-gray-600">
+                  Whether you are travelling for business, study, family,
+                  leisure or adventure, we can help you organize flight
+                  arrangements around your itinerary.
+                </p>
+
+                <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                  {[
+                    "Domestic flights",
+                    "International flights",
+                    "One-way & return",
+                    "Multi-city travel",
+                    "Group bookings",
+                    "Student travel",
+                  ].map((item) => (
+                    <div
+                      key={item}
+                      className="flex items-center gap-3 rounded-xl bg-[#FFF9F5] px-4 py-3"
+                    >
+                      <Check
+                        size={16}
+                        className="shrink-0 text-[#EC1676]"
+                      />
+
+                      <span className="text-sm font-semibold text-gray-700">
+                        {item}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href="/contact"
+                  className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#17151A] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-black"
+                >
+                  Request Flight Booking
+                  <ArrowRight size={17} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          STUDENT TRAVEL
+      ===================================================== */}
+      <section className="bg-white py-20 sm:py-24 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
+                Students & Young Travellers
+              </span>
+
+              <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
+                Your Next Chapter
+                <br />
+                <span className="text-[#EC1676]">
+                  Starts Somewhere.
+                </span>
+              </h2>
+
+              <p className="mt-6 text-base leading-8 text-gray-600">
+                Wincate provides travel planning support for students and
+                young travellers preparing for study-related journeys,
+                internships, educational travel and international experiences.
+              </p>
+
+              <div className="mt-8 space-y-4">
+                {studentServices.map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3"
+                  >
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#EC1676] text-white">
+                      <Check size={14} />
+                    </span>
+
+                    <span className="text-sm font-semibold text-gray-700">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 rounded-2xl border border-[#EC1676]/20 bg-[#FFF9F5] p-5">
+                <p className="text-sm leading-7 text-gray-600">
+                  If you are looking for an actual job or internship placement,
+                  eligibility and placement depend on the relevant employer,
+                  institution or program. Our role is to assist with travel
+                  planning and related arrangements.
+                </p>
+              </div>
+
+              <a
+                href="/contact"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#EC1676] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#D80F68]"
+              >
+                Plan Student Travel
+                <ArrowRight size={17} />
+              </a>
+            </div>
+
+            <div className="relative overflow-hidden rounded-[2.5rem]">
+              <img
+                src={images.student}
+                alt="Students travelling together"
+                loading="lazy"
+                className="h-[560px] w-full object-cover transition duration-700 hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/80 via-transparent to-transparent" />
+
+              <div className="absolute bottom-7 left-7 right-7">
+                <div className="rounded-2xl border border-white/20 bg-black/25 p-6 backdrop-blur-md">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF72AC]">
+                    Student Travel
+                  </p>
+
+                  <h3 className="mt-2 font-serif text-2xl font-bold text-white">
+                    Study. Explore. Experience.
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-6 text-white/60">
+                    Practical support for your journey beyond the classroom.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          INTERNATIONAL TRAVEL
+      ===================================================== */}
+      <section className="bg-[#17151A] py-20 sm:py-24 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
+              Local & International
+            </span>
+
+            <h2 className="mt-4 font-serif text-4xl font-bold text-white sm:text-5xl">
+              Go Further With
+              <span className="text-[#FF72AC]">
+                {" "}
+                Wincate
+              </span>
+            </h2>
+
+            <p className="mt-5 text-base leading-8 text-white/55">
+              From Kenya's coast to international destinations, we help
+              coordinate the essential parts of your journey.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-7 md:grid-cols-3">
+            {internationalDestinations.map((destination) => (
+              <article
+                key={destination.title}
+                className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] transition duration-500 hover:-translate-y-2 hover:bg-white/[0.07]"
+              >
+                <div className="relative h-[300px] overflow-hidden">
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#17151A] via-transparent to-transparent" />
+
+                  <div className="absolute bottom-6 left-6">
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF72AC]">
+                      {destination.category}
+                    </span>
+
+                    <h3 className="mt-2 font-serif text-3xl font-bold text-white">
+                      {destination.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-7">
+                  <p className="text-sm leading-7 text-white/55">
+                    {destination.description}
+                  </p>
+
+                  <div className="mt-6 space-y-3">
+                    {destination.points.map((point) => (
+                      <div
+                        key={point}
+                        className="flex items-center gap-3"
+                      >
+                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#EC1676]/20">
+                          <Check
+                            size={13}
+                            className="text-[#FF72AC]"
+                          />
+                        </span>
+
+                        <span className="text-sm font-semibold text-white/75">
+                          {point}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <a
+                    href="/contact"
+                    className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#FF72AC] transition-all group-hover:gap-3"
+                  >
+                    Plan This Journey
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          NAIROBI EXPERIENCES
+      ===================================================== */}
+      <section className="bg-[#FFF9F5] py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
+          <div className="grid overflow-hidden rounded-[2.5rem] bg-[#17151A] lg:grid-cols-2">
+            <div className="relative min-h-[500px]">
+              <img
+                src={nairobi}
+                alt="Nairobi wildlife experience"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/85 via-transparent to-transparent" />
+
+              <div className="absolute bottom-7 left-7">
                 <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
                   Nairobi Experiences
                 </span>
@@ -477,60 +967,53 @@ const Services = () => {
                 <h3 className="mt-2 font-serif text-3xl font-bold text-white sm:text-4xl">
                   Wildlife Just Outside the City
                 </h3>
-
               </div>
-
             </div>
 
-
             <div className="flex items-center px-7 py-14 sm:px-12 lg:px-16">
-
               <div>
-
                 <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
                   Discover Nairobi
                 </span>
 
                 <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-white sm:text-5xl">
                   Your Nairobi
-                  <span className="text-[#FF72AC]"> Adventure</span>
+                  <span className="text-[#FF72AC]">
+                    {" "}
+                    Adventure
+                  </span>
                 </h2>
 
                 <p className="mt-6 text-base leading-8 text-white/60">
-                  Explore some of Nairobi's most popular attractions without
-                  having to travel far from the city. Wincate can help arrange
-                  transport and excursions to Nairobi National Park and the
-                  Giraffe Centre.
+                  Explore some of Nairobi's most popular attractions through
+                  flexible day trips, private excursions and group travel.
                 </p>
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
-
                   <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                    <MapPin className="text-[#FF72AC]" size={22} />
 
-                    <h4 className="font-serif text-lg font-bold text-white">
+                    <h4 className="mt-4 font-serif text-lg font-bold text-white">
                       Nairobi National Park
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/50">
-                      Game drives and wildlife experiences with the Nairobi
-                      skyline in the background.
+                      Wildlife experiences close to the city.
                     </p>
-
                   </div>
 
                   <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                    <MapPin className="text-[#FF72AC]" size={22} />
 
-                    <h4 className="font-serif text-lg font-bold text-white">
+                    <h4 className="mt-4 font-serif text-lg font-bold text-white">
                       Giraffe Centre
                     </h4>
 
                     <p className="mt-2 text-sm leading-6 text-white/50">
-                      A memorable wildlife experience for families, couples
-                      and groups.
+                      A memorable wildlife experience for visitors of all
+                      ages.
                     </p>
-
                   </div>
-
                 </div>
 
                 <a
@@ -540,175 +1023,67 @@ const Services = () => {
                   Book an Excursion
                   <ArrowRight size={17} />
                 </a>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       </section>
 
-
       {/* =====================================================
-          GIRAFFE CENTRE
+          CAMP NDUNDA
       ===================================================== */}
-      <section className="bg-white py-20 sm:py-24">
+      <section className="relative overflow-hidden bg-white py-20 sm:py-24">
+        <div className="absolute -right-40 top-0 h-96 w-96 rounded-full bg-[#EC1676]/10 blur-3xl" />
 
-        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
+        <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-
-            <div className="relative overflow-hidden rounded-[2.5rem]">
-
-              <img
-                src={images.giraffeCentre}
-                alt="Giraffe Centre Nairobi"
-                loading="lazy"
-                className="h-[500px] w-full object-cover transition duration-700 hover:scale-105"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-              <div className="absolute bottom-7 left-7">
-
-                <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
-                  Nairobi Wildlife
-                </span>
-
-                <h3 className="mt-2 font-serif text-3xl font-bold text-white">
-                  Meet Kenya's Giraffes
-                </h3>
-
-              </div>
-
-            </div>
-
-
             <div>
-
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
-                Giraffe Centre
+                Nature & Adventure
               </span>
 
               <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
-                A Close-Up
-                <span className="text-[#EC1676]"> Wildlife Experience</span>
+                Escape to
+                <span className="text-[#EC1676]">
+                  {" "}
+                  Camp Ndunda
+                </span>
               </h2>
 
-              <p className="mt-6 text-base leading-8 text-gray-600">
-                Add a visit to the Giraffe Centre to your Nairobi itinerary.
-                It is a great option for families, couples, school groups,
-                corporate groups and visitors looking for a short wildlife
-                experience.
+              <p className="mt-6 max-w-xl text-base leading-8 text-gray-600">
+                Looking for something different from the traditional safari?
+                Add a nature and outdoor adventure experience to your travel
+                plans and enjoy a refreshing escape with friends, family or
+                colleagues.
               </p>
 
-              <div className="mt-8 space-y-4">
-
+              <div className="mt-8 flex flex-wrap gap-3">
                 {[
-                  "Giraffe encounters",
-                  "Family-friendly experience",
-                  "Nairobi city excursion",
-                  "Private and group transport",
-                ].map((item) => (
-
-                  <div
-                    key={item}
-                    className="flex items-center gap-3"
+                  "Nature",
+                  "Adventure",
+                  "Outdoor Activities",
+                  "Groups",
+                  "Team Experiences",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-[#EC1676]/10 bg-[#FFF9F5] px-4 py-2 text-xs font-bold text-gray-700"
                   >
-
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#EC1676] text-white">
-                      <Check size={14} />
-                    </span>
-
-                    <span className="text-sm font-semibold text-gray-700">
-                      {item}
-                    </span>
-
-                  </div>
-
+                    {tag}
+                  </span>
                 ))}
-
               </div>
 
               <a
                 href="/contact"
                 className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#17151A] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-black"
               >
-                Plan Your Visit
-                <ArrowRight size={17} />
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* =====================================================
-          CAMP NDUNDA
-      ===================================================== */}
-      <section className="relative overflow-hidden bg-[#17151A] py-20 sm:py-24">
-
-        <div className="absolute -right-40 top-0 h-96 w-96 rounded-full bg-[#EC1676]/20 blur-3xl" />
-
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-
-            <div>
-
-              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF72AC]">
-                Nature & Adventure
-              </span>
-
-              <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-white sm:text-5xl">
-                Escape to
-                <span className="text-[#FF72AC]"> Camp Ndunda</span>
-              </h2>
-
-              <p className="mt-6 max-w-xl text-base leading-8 text-white/60">
-                Looking for something different from the traditional safari?
-                Add an outdoor adventure at Camp Ndunda to your Kenya travel
-                plans and enjoy nature, adventure and group experiences.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-
-                {[
-                  "Nature",
-                  "Adventure",
-                  "Outdoor Activities",
-                  "Groups",
-                ].map((tag) => (
-
-                  <span
-                    key={tag}
-                    className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-bold text-white/70"
-                  >
-                    {tag}
-                  </span>
-
-                ))}
-
-              </div>
-
-              <a
-                href="/contact"
-                className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#EC1676] px-7 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#D80F68]"
-              >
                 Plan the Experience
                 <ArrowRight size={17} />
               </a>
-
             </div>
 
-
             <div className="relative">
-
               <img
                 src={images.campNdunda}
                 alt="Camp Ndunda Kenya"
@@ -717,7 +1092,6 @@ const Services = () => {
               />
 
               <div className="absolute -bottom-5 left-5 rounded-2xl bg-[#EC1676] px-6 py-5 shadow-2xl sm:left-6">
-
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/70">
                   Experience Kenya
                 </p>
@@ -725,35 +1099,29 @@ const Services = () => {
                 <p className="mt-1 font-serif text-xl font-bold text-white">
                   Nature. Adventure. Memories.
                 </p>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       </section>
-
 
       {/* =====================================================
           TEAM BUILDING
       ===================================================== */}
       <section className="bg-[#FFF9F5] py-20 sm:py-24">
-
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
           <div className="grid items-center gap-12 lg:grid-cols-2">
-
             <div className="order-2 lg:order-1">
-
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
                 Corporate & Groups
               </span>
 
               <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
                 Bring Your
-                <span className="text-[#EC1676]"> Team Together</span>
+                <span className="text-[#EC1676]">
+                  {" "}
+                  Team Together
+                </span>
               </h2>
 
               <p className="mt-6 text-base leading-8 text-gray-600">
@@ -763,19 +1131,16 @@ const Services = () => {
               </p>
 
               <div className="mt-8 space-y-4">
-
                 {[
                   "Corporate team-building trips",
                   "Group transport arrangements",
                   "Outdoor activities and excursions",
                   "Accommodation coordination",
                 ].map((item) => (
-
                   <div
                     key={item}
                     className="flex items-center gap-3"
                   >
-
                     <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#EC1676] text-white">
                       <Check size={14} />
                     </span>
@@ -783,11 +1148,8 @@ const Services = () => {
                     <span className="text-sm font-semibold text-gray-700">
                       {item}
                     </span>
-
                   </div>
-
                 ))}
-
               </div>
 
               <a
@@ -797,14 +1159,10 @@ const Services = () => {
                 Plan Team Building
                 <ArrowRight size={17} />
               </a>
-
             </div>
 
-
             <div className="order-1 lg:order-2">
-
               <div className="relative overflow-hidden rounded-[2.5rem]">
-
                 <img
                   src={team}
                   alt="Team building activity in Kenya"
@@ -815,9 +1173,7 @@ const Services = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/70 via-transparent to-transparent" />
 
                 <div className="absolute bottom-7 left-7 right-7">
-
                   <div className="rounded-2xl border border-white/20 bg-black/25 p-5 backdrop-blur-md">
-
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF72AC]">
                       Groups • Teams • Companies
                     </p>
@@ -825,48 +1181,33 @@ const Services = () => {
                     <p className="mt-2 font-serif text-2xl font-bold text-white">
                       Experiences That Bring People Together
                     </p>
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       </section>
-
 
       {/* =====================================================
           HOTEL BOOKINGS
       ===================================================== */}
       <section className="bg-white py-20 sm:py-24">
-
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
           <div className="grid overflow-hidden rounded-[2.5rem] bg-[#FFF9F5] shadow-xl lg:grid-cols-2">
-
-            <div className="relative min-h-[450px]">
-
+            <div className="relative min-h-[480px]">
               <img
                 src={images.hotel}
-                alt="Hotel accommodation in Nairobi"
+                alt="Hotel accommodation"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/60 via-transparent to-transparent" />
-
+              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/70 via-transparent to-transparent" />
             </div>
 
-
             <div className="flex items-center p-8 sm:p-12 lg:p-16">
-
               <div>
-
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#EC1676]/10">
                   <CalendarCheck
                     size={23}
@@ -880,39 +1221,38 @@ const Services = () => {
 
                 <h2 className="mt-3 font-serif text-4xl font-bold leading-tight sm:text-5xl">
                   Stay Somewhere
-                  <span className="text-[#EC1676]"> You Love.</span>
+                  <span className="text-[#EC1676]">
+                    {" "}
+                    You Love.
+                  </span>
                 </h2>
 
                 <p className="mt-6 text-base leading-8 text-gray-600">
                   We can help arrange accommodation for your safari, business
-                  trip, family holiday, beach escape or group adventure.
+                  trip, family holiday, beach escape, student journey or group
+                  adventure.
                 </p>
 
                 <div className="mt-7 grid gap-3 sm:grid-cols-2">
-
                   {[
                     "Hotels",
                     "Safari lodges",
                     "Safari camps",
                     "Beach resorts",
+                    "City accommodation",
+                    "Group accommodation",
                   ].map((item) => (
-
                     <div
                       key={item}
                       className="flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold"
                     >
-
                       <Check
                         size={15}
                         className="text-[#EC1676]"
                       />
-
                       {item}
-
                     </div>
-
                   ))}
-
                 </div>
 
                 <a
@@ -922,28 +1262,19 @@ const Services = () => {
                   Ask About Accommodation
                   <ArrowRight size={17} />
                 </a>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       </section>
-
 
       {/* =====================================================
           WHY WINCATE
       ===================================================== */}
       <section className="bg-white py-20 sm:py-24 lg:py-28">
-
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
-
             <div>
-
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
                 The Wincate Difference
               </span>
@@ -955,26 +1286,22 @@ const Services = () => {
                   Confidence.
                 </span>
               </h2>
-
             </div>
 
             <p className="max-w-2xl text-base leading-8 text-gray-600">
               We believe good travel service is about being available,
-              dependable and attentive to the details that matter.
+              dependable and attentive to the details that matter — from
+              planning and documentation to accommodation, transport and
+              experiences.
             </p>
-
           </div>
 
-
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-
             {benefits.map((benefit) => (
-
               <div
                 key={benefit.number}
                 className="group rounded-[1.75rem] border border-gray-100 bg-[#FFF9F5] p-7 transition duration-300 hover:-translate-y-2 hover:border-[#EC1676]/30 hover:shadow-xl"
               >
-
                 <span className="text-xs font-black text-[#EC1676]">
                   {benefit.number}
                 </span>
@@ -993,50 +1320,38 @@ const Services = () => {
                 <p className="mt-4 text-sm leading-7 text-gray-600">
                   {benefit.text}
                 </p>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
       </section>
-
 
       {/* =====================================================
           HOW IT WORKS
       ===================================================== */}
       <section className="bg-[#FFF9F5] py-20 sm:py-24">
-
         <div className="mx-auto max-w-6xl px-6 sm:px-8">
-
           <div className="mx-auto max-w-3xl text-center">
-
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
               Simple & Easy
             </span>
 
             <h2 className="mt-4 font-serif text-4xl font-bold sm:text-5xl">
-              From Enquiry to Adventure
+              From Enquiry to Journey
             </h2>
 
             <p className="mt-5 text-base leading-7 text-gray-600">
-              Tell us what you need and we'll help you organize the journey.
+              Tell us what you need and we will help organize the essential
+              parts of your travel.
             </p>
-
           </div>
 
-
           <div className="mt-14 grid gap-8 md:grid-cols-3">
-
             {process.map((step) => (
-
               <div
                 key={step.number}
                 className="relative rounded-[2rem] bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
-
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#EC1676] font-black text-white">
                   {step.number}
                 </div>
@@ -1048,28 +1363,20 @@ const Services = () => {
                 <p className="mt-4 text-sm leading-7 text-gray-600">
                   {step.text}
                 </p>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
       </section>
 
-
       {/* =====================================================
-          CTA
+          FINAL CTA
       ===================================================== */}
       <section className="relative overflow-hidden bg-[#EC1676] py-20 sm:py-24">
-
         <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full border-[60px] border-white/10" />
-
         <div className="absolute -bottom-40 -left-32 h-96 w-96 rounded-full border-[70px] border-white/10" />
 
         <div className="relative mx-auto max-w-5xl px-6 text-center sm:px-8">
-
           <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/70">
             Let's Plan Together
           </span>
@@ -1079,13 +1386,12 @@ const Services = () => {
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/85 sm:text-lg">
-            Whether you need a safari, Nairobi excursion, team-building
-            experience, hotel booking, airport transfer or car hire, we're
-            ready to help.
+            Whether you need a safari, flight ticket, visa guidance, passport
+            support, hotel booking, student travel, airport transfer, car
+            hire or international holiday, Wincate is ready to help.
           </p>
 
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-
             <a
               href="/contact"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-[#17151A] px-8 py-4 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-black hover:shadow-2xl"
@@ -1103,22 +1409,16 @@ const Services = () => {
               <MessageCircle size={18} />
               WhatsApp Us
             </a>
-
           </div>
 
           <div className="mt-7 flex items-center justify-center gap-2 text-sm text-white/80">
             <Phone size={15} />
             <span>0724 938419</span>
           </div>
-
         </div>
       </section>
 
-
-      {/* =====================================================
-          FOOTER
-      ===================================================== */}
-     
+      
 <footer className="bg-black text-white">
   {/* Footer Main */}
   <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
@@ -1466,7 +1766,6 @@ const Services = () => {
     </div>
   </div>
 </footer>
-
     </main>
   );
 };

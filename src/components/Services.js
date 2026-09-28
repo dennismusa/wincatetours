@@ -3,14 +3,10 @@ import React from "react";
 import tanzania from "../assets/tanzania.jpg";
 import serengeti1 from "../assets/serengeti1.jpg";
 import serengeti2 from "../assets/serengeti2.jpg";
+import mara4 from "../assets/mara4.jpg";
 import team from "../assets/team.jpg";
 import {
-  ArrowRight,
-  Check,
-  ChevronRight,
-  MessageCircle,
-  Phone,
-  ShieldCheck,
+  ArrowRight,  Check,  ChevronRight,  MessageCircle,  Phone,  ShieldCheck,
 } from "lucide-react";
 
 const Services = () => {
@@ -39,14 +35,32 @@ const Services = () => {
     airport:
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=90",
 
-    carHire:
-      {serengeti1},
+    ticketing:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=90",
+
+    passport:
+      "https://images.unsplash.com/photo-1541872705-1f73c6400ec9?auto=format&fit=crop&w=1600&q=90",
+
+    visa:
+      "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=90",
+
+    student:
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=90",
+
+    international:
+      "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1800&q=90",
 
     beach:
       "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1600&q=90",
 
     planning:
       "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=90",
+
+    dubai:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=90",
+
+    zanzibar:
+      "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1600&q=90",
   };
 
   const experienceServices = [
@@ -84,7 +98,7 @@ const Services = () => {
       label: "Nature & Adventure",
       image: images.campNdunda,
       description:
-        "Escape the city and enjoy an outdoor experience at Camp Ndunda. We can help arrange your transportation, group logistics and adventure experience.",
+        "Escape the city and enjoy an outdoor experience at Camp Ndunda. We can help arrange transportation, group logistics and adventure experiences.",
       features: [
         "Outdoor experiences",
         "Nature activities",
@@ -114,14 +128,14 @@ const Services = () => {
       title: "Tours & Safaris",
       image: tanzania,
       description:
-        "Discover Kenya through wildlife safaris, private tours, group adventures and tailor-made journeys.",
+        "Discover Kenya and East Africa through wildlife safaris, private tours, group adventures and tailor-made journeys.",
     },
     {
       number: "06",
       title: "Airport Transfers",
       image: images.airport,
       description:
-        "Reliable transfers between Nairobi airports, hotels, residences and destinations across Kenya.",
+        "Reliable transfers between airports, hotels, residences and destinations across Kenya.",
     },
     {
       number: "07",
@@ -142,7 +156,7 @@ const Services = () => {
       title: "Beach Holidays",
       image: images.beach,
       description:
-        "Relax along Kenya's coast with accommodation, transfers and carefully arranged coastal experiences.",
+        "Relax along Kenya's coast and other beach destinations with accommodation, transfers and experiences.",
     },
     {
       number: "10",
@@ -153,48 +167,170 @@ const Services = () => {
     },
   ];
 
+  const agencyServices = [
+    {
+      number: "11",
+      title: "Visa Application Support",
+      label: "Visa Services",
+      image: images.visa,
+      description:
+        "Get practical assistance when preparing for international travel. We help travellers understand application requirements, organize supporting documents and navigate the application process for their intended destination.",
+      features: [
+        "Visa application guidance",
+        "Document checklist support",
+        "Application preparation",
+        "Travel documentation",
+      ],
+    },
+    {
+      number: "12",
+      title: "Passport Processing Support",
+      label: "Travel Documentation",
+      image: images.passport,
+      description:
+        "We assist travellers with the information and preparation needed for passport applications, renewals and replacement processes, helping you understand the documentation and steps required.",
+      features: [
+        "New passport guidance",
+        "Passport renewal support",
+        "Replacement guidance",
+        "Document preparation",
+      ],
+    },
+    {
+      number: "13",
+      title: "Flight Ticketing",
+      label: "Air Travel",
+      image: images.ticketing,
+      description:
+        "Plan domestic and international flights with support for one-way, return and multi-city journeys. We help you identify suitable travel options around your dates and itinerary.",
+      features: [
+        "Domestic flights",
+        "International flights",
+        "Return & one-way tickets",
+        "Group travel arrangements",
+      ],
+    },
+    {
+      number: "14",
+      title: "Student Travel & Opportunities",
+      label: "Student Services",
+      image: images.student,
+      description:
+        "Travel support for students planning education-related journeys, internships, exchanges, study trips and other international opportunities. We can also help with travel documentation, accommodation and itinerary planning.",
+      features: [
+        "Student travel planning",
+        "Study-related travel",
+        "Internship travel support",
+        "Accommodation assistance",
+      ],
+    },
+  ];
+
+  const internationalServices = [
+    {
+      number: "15",
+      title: "International Travel",
+      image: images.international,
+      description:
+        "From Africa to destinations around the world, we help coordinate the practical elements of international travel including flights, accommodation, visa guidance and travel planning.",
+      features: [
+        "International flights",
+        "Visa guidance",
+        "Hotel arrangements",
+        "Complete itinerary planning",
+      ],
+    },
+    {
+      number: "16",
+      title: "Dubai Travel",
+      image: images.dubai,
+      description:
+        "Experience Dubai for holidays, shopping, family travel, business trips and leisure. We can help coordinate flights, accommodation and travel arrangements.",
+      features: [
+        "Dubai holidays",
+        "Hotel bookings",
+        "Flight arrangements",
+        "Desert experiences",
+      ],
+    },
+    {
+      number: "17",
+      title: "Zanzibar Travel",
+      image: images.zanzibar,
+      description:
+        "Plan a tropical escape to Zanzibar with assistance with flights, accommodation, transfers and island experiences.",
+      features: [
+        "Beach holidays",
+        "Hotel & resort bookings",
+        "Flight arrangements",
+        "Island experiences",
+      ],
+    },
+  ];
+
   const benefits = [
     {
       number: "01",
       title: "Local Knowledge",
-      text: "Our understanding of Kenya helps us connect you with destinations and experiences that suit your trip.",
+      text: "Our understanding of Kenya helps us connect you with destinations, experiences and travel arrangements suited to your journey.",
     },
     {
       number: "02",
-      title: "Flexible Planning",
-      text: "We can adapt arrangements around your dates, group size, interests and travel requirements.",
+      title: "Local & International",
+      text: "Whether you are travelling within Kenya, across East Africa or internationally, we can help coordinate the practical details.",
     },
     {
       number: "03",
-      title: "Reliable Arrangements",
-      text: "From transport to accommodation, we focus on keeping your travel arrangements clear and convenient.",
+      title: "Flexible Planning",
+      text: "We can adapt arrangements around your dates, group size, budget, interests and travel requirements.",
     },
     {
       number: "04",
       title: "Personal Support",
-      text: "Our team remains available to help before and during your journey.",
+      text: "Our team remains available to help you understand the process and coordinate the different elements of your trip.",
+    },
+  ];
+
+  const process = [
+    {
+      number: "01",
+      title: "Tell Us What You Need",
+      text: "Share your destination, dates, number of travellers and the type of service you require.",
+    },
+    {
+      number: "02",
+      title: "We Build the Plan",
+      text: "We help coordinate the relevant travel arrangements, documentation, accommodation, transport or experiences.",
+    },
+    {
+      number: "03",
+      title: "Review Your Arrangements",
+      text: "We communicate the available options and requirements so you can review the details before proceeding.",
+    },
+    {
+      number: "04",
+      title: "Travel With Confidence",
+      text: "Once your arrangements are confirmed, you can focus on your journey while keeping the important details organized.",
     },
   ];
 
   return (
     <main className="bg-[#FFF9F5] text-[#17151A]">
-
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative min-h-[52vh] overflow-hidden bg-[#17151A]">
+      <section className="relative min-h-[72vh] overflow-hidden bg-[#17151A]">
         <img
-          src={serengeti2}
-          alt="Kenya safari"
+          src={mara4}
+          alt="Wincate Tours and Travels safari"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-[#17151A]/95 via-[#17151A]/70 to-[#17151A]/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#17151A]/95 via-[#17151A]/75 to-[#17151A]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/90 via-transparent to-transparent" />
 
         <div className="relative mx-auto flex min-h-[72vh] max-w-7xl items-end px-6 pb-20 pt-32 sm:px-8 lg:px-12">
-          <div className="max-w-4xl">
-
+          <div className="max-w-5xl">
             <div className="mb-6 flex items-center gap-3">
               <span className="h-px w-12 bg-[#EC1676]" />
 
@@ -203,21 +339,22 @@ const Services = () => {
               </span>
             </div>
 
-            <h1 className="max-w-4xl font-serif text-5xl font-bold leading-[0.95] text-white sm:text-6xl lg:text-8xl">
-              Travel services
+            <h1 className="max-w-5xl font-serif text-5xl font-bold leading-[0.95] text-white sm:text-6xl lg:text-8xl">
+              Everything you need
               <br />
-              <span className="text-[#FF4C9A]">built around you.</span>
+              <span className="text-[#FF4C9A]">
+                to travel further.
+              </span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
-              From wildlife experiences and airport transfers to hotel
-              bookings, car hire and corporate team building, Wincate helps
-              you make every journey across Kenya easier.
+            <p className="mt-7 max-w-3xl text-base leading-8 text-white/75 sm:text-lg">
+              From local excursions and wildlife safaris to international
+              travel, visa support, passport processing, flight ticketing,
+              hotel bookings and student travel services, Wincate helps bring
+              the important pieces of your journey together.
             </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              
-            </div>
+            
           </div>
         </div>
 
@@ -228,11 +365,44 @@ const Services = () => {
       </section>
 
       {/* =========================================================
+          SERVICE PILLARS
+      ========================================================= */}
+      <section className="border-b border-black/5 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8 lg:px-12">
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[1.5rem] bg-black/10 md:grid-cols-3 lg:grid-cols-6">
+            {[
+              ["01", "Visa Support"],
+              ["02", "Passport"],
+              ["03", "Ticketing"],
+              ["04", "Hotels"],
+              ["05", "Student Travel"],
+              ["06", "Tours & Safaris"],
+            ].map(([number, title]) => (
+              <a
+                key={number}
+                href="#all-services"
+                className="group bg-white p-5 transition duration-300 hover:bg-[#FFF9F5]"
+              >
+                <span className="text-xs font-bold text-[#EC1676]">
+                  {number}
+                </span>
+
+                <p className="mt-3 text-sm font-bold text-[#17151A] transition group-hover:text-[#EC1676]">
+                  {title}
+                </p>
+
+                <div className="mt-4 h-px w-7 bg-black/10 transition-all duration-300 group-hover:w-12 group-hover:bg-[#EC1676]" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
           INTRO
       ========================================================= */}
       <section className="border-b border-black/5 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[1fr_1.5fr] lg:px-12 lg:py-28">
-
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[0.8fr_1.5fr] lg:px-12 lg:py-28">
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
               What We Do
@@ -247,25 +417,29 @@ const Services = () => {
 
           <div className="max-w-3xl">
             <p className="text-xl leading-9 text-[#17151A]/70">
-              Wincate Tours & Travels provides a range of travel services
-              designed to make exploring Kenya simple, comfortable and
-              memorable.
+              Wincate Tours & Travels provides a broad range of travel
+              services designed to make local and international travel easier,
+              more organized and more convenient.
             </p>
 
             <p className="mt-6 leading-8 text-[#17151A]/55">
-              Whether you are looking for a quick Nairobi wildlife excursion,
-              a corporate team-building experience, airport transportation,
-              accommodation or a complete safari, we help coordinate the
-              details around your needs.
+              Whether you are planning a safari in Kenya, travelling to
+              Zanzibar or Dubai, arranging a flight, looking for a hotel,
+              preparing travel documents, applying for a visa or organizing
+              student travel, our goal is to help you coordinate the journey
+              from the planning stage onwards.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               {[
-                "Wildlife",
-                "Transport",
-                "Accommodation",
-                "Adventure",
-                "Corporate Travel",
+                "Local Travel",
+                "International Travel",
+                "Visa Support",
+                "Passport Support",
+                "Flight Ticketing",
+                "Hotels",
+                "Student Travel",
+                "Tours & Safaris",
               ].map((item) => (
                 <span
                   key={item}
@@ -287,10 +461,9 @@ const Services = () => {
         className="bg-[#FFF9F5] px-6 py-20 sm:px-8 lg:px-12 lg:py-28"
       >
         <div className="mx-auto max-w-7xl">
-
           <div className="max-w-3xl">
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
-              Experiences
+              Local Experiences
             </span>
 
             <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-6xl">
@@ -301,21 +474,20 @@ const Services = () => {
 
             <p className="mt-5 max-w-2xl leading-8 text-black/55">
               Explore some of the experiences Wincate can arrange for
-              individuals, families, groups and organizations.
+              individuals, families, groups, companies and organizations.
             </p>
           </div>
 
           {/* EXPERIENCE 01 */}
           <div className="mt-16 grid overflow-hidden rounded-[2rem] bg-[#17151A] lg:grid-cols-[1.2fr_1fr]">
-
             <div className="relative min-h-[420px]">
               <img
                 src={experienceServices[0].image}
                 alt={experienceServices[0].title}
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover transition duration-700 hover:scale-105"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
               <span className="absolute left-7 top-7 rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold text-white">
                 {experienceServices[0].number}
@@ -367,7 +539,6 @@ const Services = () => {
 
           {/* EXPERIENCE 02 */}
           <div className="mt-6 grid overflow-hidden rounded-[2rem] bg-white shadow-sm lg:grid-cols-2">
-
             <div className="order-2 flex flex-col justify-center p-8 sm:p-12 lg:order-1 lg:p-16">
               <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#EC1676]">
                 {experienceServices[1].label}
@@ -421,7 +592,6 @@ const Services = () => {
 
           {/* EXPERIENCE 03 + 04 */}
           <div className="mt-6 grid gap-6 lg:grid-cols-2">
-
             {experienceServices.slice(2).map((service) => (
               <article
                 key={service.title}
@@ -434,7 +604,7 @@ const Services = () => {
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
 
                   <span className="absolute left-6 top-6 rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold text-white">
                     {service.number}
@@ -484,22 +654,23 @@ const Services = () => {
       </section>
 
       {/* =========================================================
-          TRAVEL SERVICES
+          CORE TRAVEL SERVICES
       ========================================================= */}
-      <section className="bg-white px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+      <section
+        id="all-services"
+        className="bg-white px-6 py-20 sm:px-8 lg:px-12 lg:py-28"
+      >
         <div className="mx-auto max-w-7xl">
-
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.5fr]">
-
             <div>
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
-                Travel Services
+                Core Travel Services
               </span>
 
               <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-5xl">
-                Everything you need,
+                The practical side
                 <br />
-                in one place.
+                of travel.
               </h2>
 
               <p className="mt-6 max-w-md leading-8 text-black/55">
@@ -517,7 +688,6 @@ const Services = () => {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-
               {travelServices.map((service) => (
                 <article
                   key={service.title}
@@ -548,8 +718,348 @@ const Services = () => {
                   </div>
                 </article>
               ))}
-
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          VISA + PASSPORT SERVICES
+      ========================================================= */}
+      <section className="bg-[#17151A] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+              Travel Documentation
+            </span>
+
+            <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-white sm:text-6xl">
+              Travel documents,
+              <br />
+              made easier.
+            </h2>
+
+            <p className="mt-5 max-w-2xl leading-8 text-white/55">
+              Preparing for international travel involves more than choosing a
+              destination. Wincate can provide practical guidance around visa
+              applications and passport-related processes so you can better
+              understand the requirements before travelling.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-2">
+            {agencyServices.slice(0, 2).map((service) => (
+              <article
+                key={service.title}
+                className="group overflow-hidden rounded-[2rem] bg-[#242127]"
+              >
+                <div className="relative h-[330px] overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#17151A] via-black/20 to-transparent" />
+
+                  <span className="absolute left-6 top-6 rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold text-white">
+                    {service.number}
+                  </span>
+
+                  <div className="absolute bottom-7 left-7 right-7">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#FF4C9A]">
+                      {service.label}
+                    </p>
+
+                    <h3 className="mt-2 font-serif text-3xl font-bold text-white sm:text-4xl">
+                      {service.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-7 sm:p-9">
+                  <p className="leading-8 text-white/55">
+                    {service.description}
+                  </p>
+
+                  <div className="mt-7 grid gap-3 sm:grid-cols-2">
+                    {service.features.map((feature) => (
+                      <div
+                        key={feature}
+                        className="flex items-center gap-3 text-sm text-white/70"
+                      >
+                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EC1676]/20 text-[#FF4C9A]">
+                          <Check size={14} />
+                        </span>
+
+                        {feature}
+                      </div>
+                    ))}
+                  </div>
+
+                  <a
+                    href="/contact"
+                    className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-[#FF4C9A] transition hover:text-white"
+                  >
+                    Get assistance
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* IMPORTANT NOTICE */}
+          <div className="mt-8 flex gap-4 rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6">
+            <ShieldCheck className="mt-1 shrink-0 text-[#FF4C9A]" size={22} />
+
+            <div>
+              <h3 className="font-bold text-white">
+                Important travel-document notice
+              </h3>
+
+              <p className="mt-2 text-sm leading-7 text-white/50">
+                Wincate provides travel assistance and application guidance.
+                Visa or passport approval is determined by the relevant
+                government authority, embassy or immigration authority.
+                Approval cannot be guaranteed by a travel agency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          FLIGHT TICKETING
+      ========================================================= */}
+      <section className="bg-[#FFF9F5] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid overflow-hidden rounded-[2rem] bg-white shadow-sm lg:grid-cols-2">
+            <div className="relative min-h-[520px]">
+              <img
+                src={images.ticketing}
+                alt="Flight ticketing and air travel"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/80 via-transparent to-transparent" />
+
+              <div className="absolute bottom-7 left-7">
+                <span className="rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold uppercase tracking-wider text-white">
+                  Air Travel
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center p-8 sm:p-12 lg:p-16">
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
+                Flight Ticketing
+              </span>
+
+              <h2 className="mt-4 font-serif text-4xl font-bold sm:text-6xl">
+                Your journey
+                <br />
+                starts in the air.
+              </h2>
+
+              <p className="mt-6 leading-8 text-black/55">
+                Whether you are flying within Kenya, travelling across Africa
+                or heading to an international destination, Wincate can assist
+                with flight planning and ticketing arrangements.
+              </p>
+
+              <div className="mt-8 space-y-4">
+                {[
+                  "Domestic and international flights",
+                  "One-way and return journeys",
+                  "Multi-city travel planning",
+                  "Family and group travel",
+                  "Student travel arrangements",
+                  "Business and leisure travel",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 text-sm font-medium text-black/65"
+                  >
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#EC1676]/10 text-[#EC1676]">
+                      <Check size={15} />
+                    </span>
+
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="/contact"
+                className="mt-9 inline-flex w-fit items-center gap-2 rounded-full bg-[#17151A] px-7 py-4 text-sm font-bold text-white transition hover:bg-[#EC1676]"
+              >
+                Enquire About Flights
+                <ArrowRight size={17} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          STUDENT TRAVEL
+      ========================================================= */}
+      <section className="bg-white px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid overflow-hidden rounded-[2rem] bg-[#17151A] lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="relative min-h-[500px]">
+              <img
+          src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=90"
+          alt="Student and work travel"
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+        />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/80 via-black/10 to-transparent" />
+
+              <div className="absolute bottom-7 left-7">
+                <span className="rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold uppercase tracking-wider text-white">
+                  Student Services
+                </span>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center p-8 sm:p-12 lg:p-16">
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
+                Students & Young Travellers
+              </span>
+
+              <h2 className="mt-4 font-serif text-4xl font-bold text-white sm:text-5xl">
+                Travel for your
+                <br />
+                next opportunity.
+              </h2>
+
+              <p className="mt-6 leading-8 text-white/55">
+                Planning to study, attend an exchange programme, take an
+                internship, join a student trip or explore an international
+                opportunity? Wincate can help organize the travel side of your
+                plans.
+              </p>
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {[
+                  "Student travel planning",
+                  "Study-related travel",
+                  "Internship travel support",
+                  "Flight ticketing",
+                  "Accommodation assistance",
+                  "Travel documentation guidance",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-3 text-sm text-white/70"
+                  >
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EC1676]/20 text-[#FF4C9A]">
+                      <Check size={14} />
+                    </span>
+
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+                <p className="text-sm leading-7 text-white/50">
+                  Student jobs and opportunities depend on available
+                  programmes, employers or institutions and the traveller's
+                  eligibility. Wincate can assist with travel arrangements and
+                  related planning rather than guaranteeing employment.
+                </p>
+              </div>
+
+              <a
+                href="/contact"
+                className="mt-8 inline-flex w-fit items-center gap-2 text-sm font-bold text-[#FF4C9A] transition hover:text-white"
+              >
+                Discuss Student Travel
+                <ArrowRight size={17} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          INTERNATIONAL TRAVEL
+      ========================================================= */}
+      <section className="bg-[#FFF9F5] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
+              Beyond Kenya
+            </span>
+
+            <h2 className="mt-4 font-serif text-4xl font-bold leading-tight sm:text-6xl">
+              Local journeys.
+              <br />
+              International horizons.
+            </h2>
+
+            <p className="mt-5 max-w-2xl leading-8 text-black/55">
+              Wincate can help you plan travel within Kenya as well as journeys
+              beyond the country's borders. Choose your destination and let us
+              help coordinate the practical details.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+            {internationalServices.map((service) => (
+              <article
+                key={service.title}
+                className="group overflow-hidden rounded-[2rem] bg-white shadow-sm"
+              >
+                <div className="relative h-[330px] overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+
+                  <span className="absolute left-6 top-6 rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold text-white">
+                    {service.number}
+                  </span>
+
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="font-serif text-3xl font-bold text-white">
+                      {service.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-7">
+                  <p className="leading-7 text-black/55">
+                    {service.description}
+                  </p>
+
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {service.features.map((feature) => (
+                      <span
+                        key={feature}
+                        className="rounded-full bg-[#FFF9F5] px-3 py-2 text-xs font-semibold text-black/60"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+
+                  <a
+                    href="/contact"
+                    className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#EC1676]"
+                  >
+                    Start planning
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -559,7 +1069,6 @@ const Services = () => {
       ========================================================= */}
       <section className="bg-[#17151A] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] bg-[#242127] lg:grid-cols-2">
-
           <div className="relative min-h-[460px]">
             <img
               src={images.hotel}
@@ -567,7 +1076,7 @@ const Services = () => {
               className="absolute inset-0 h-full w-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/70 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#17151A]/80 to-transparent" />
 
             <div className="absolute bottom-7 left-7">
               <span className="rounded-full bg-[#EC1676] px-4 py-2 text-xs font-bold uppercase tracking-wider text-white">
@@ -577,7 +1086,6 @@ const Services = () => {
           </div>
 
           <div className="flex flex-col justify-center p-8 sm:p-12 lg:p-16">
-
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FF4C9A]">
               Hotel Bookings
             </span>
@@ -589,9 +1097,9 @@ const Services = () => {
             </h2>
 
             <p className="mt-6 leading-8 text-white/60">
-              Whether your trip takes you to Nairobi, the coast or the heart
-              of Kenya's safari destinations, we can help arrange
-              accommodation around your travel plans and budget.
+              Whether your trip takes you to Nairobi, the coast, another
+              African destination or an international city, we can help
+              coordinate accommodation around your travel plans and budget.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -599,6 +1107,8 @@ const Services = () => {
                 "City hotels",
                 "Safari lodges and camps",
                 "Beach resorts",
+                "International accommodation",
+                "Family and group stays",
                 "Accommodation planning",
               ].map((item) => (
                 <div
@@ -632,21 +1142,25 @@ const Services = () => {
       ========================================================= */}
       <section className="bg-[#FFF9F5] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto max-w-7xl">
-
           <div className="max-w-2xl">
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
               Why Wincate
             </span>
 
             <h2 className="mt-4 font-serif text-4xl font-bold sm:text-6xl">
-              Simple planning.
+              One travel partner.
               <br />
-              Better journeys.
+              Many possibilities.
             </h2>
+
+            <p className="mt-5 max-w-2xl leading-8 text-black/50">
+              From a simple local excursion to a more complex international
+              journey, we bring different travel services together so you do
+              not have to coordinate everything separately.
+            </p>
           </div>
 
           <div className="mt-14 grid gap-px overflow-hidden rounded-[2rem] bg-black/10 sm:grid-cols-2 lg:grid-cols-4">
-
             {benefits.map((benefit) => (
               <article
                 key={benefit.number}
@@ -665,7 +1179,6 @@ const Services = () => {
                 </p>
               </article>
             ))}
-
           </div>
         </div>
       </section>
@@ -675,9 +1188,7 @@ const Services = () => {
       ========================================================= */}
       <section className="bg-white px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
         <div className="mx-auto max-w-7xl">
-
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.5fr]">
-
             <div>
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
                 How It Works
@@ -693,27 +1204,21 @@ const Services = () => {
                 Tell us what you have in mind and we'll help turn the idea
                 into a practical travel plan.
               </p>
+
+              <div className="mt-8 rounded-[1.5rem] bg-[#FFF9F5] p-6">
+                <div className="flex items-start gap-4">
+                  <ShieldCheck className="mt-1 shrink-0 text-[#EC1676]" size={23} />
+
+                  <p className="text-sm leading-7 text-black/55">
+                    We aim to make the planning process clear, organized and
+                    easy to understand before you confirm your arrangements.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="divide-y divide-black/10">
-
-              {[
-                {
-                  number: "01",
-                  title: "Tell Us Your Plans",
-                  text: "Share your destination, dates, group size and the type of experience you are looking for.",
-                },
-                {
-                  number: "02",
-                  title: "We Arrange the Details",
-                  text: "We help coordinate transportation, accommodation, activities and other travel requirements.",
-                },
-                {
-                  number: "03",
-                  title: "Enjoy Your Journey",
-                  text: "Travel with confidence knowing that the important details have been arranged around your needs.",
-                },
-              ].map((step) => (
+              {process.map((step) => (
                 <div
                   key={step.number}
                   className="grid gap-5 py-8 sm:grid-cols-[80px_1fr]"
@@ -733,7 +1238,6 @@ const Services = () => {
                   </div>
                 </div>
               ))}
-
             </div>
           </div>
         </div>
@@ -743,32 +1247,29 @@ const Services = () => {
           FINAL CTA
       ========================================================= */}
       <section className="relative overflow-hidden bg-[#EC1676] px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
-
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
         <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-black/10 blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
-
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-white/70">
               Start Planning
             </span>
 
             <h2 className="mt-4 max-w-3xl font-serif text-4xl font-bold leading-tight text-white sm:text-6xl">
-              Have a destination in mind?
+              Wherever you're going,
               <br />
-              Let's make it happen.
+              let's plan it together.
             </h2>
 
             <p className="mt-5 max-w-2xl leading-8 text-white/75">
-              Whether you need a safari, airport transfer, hotel, car hire,
-              excursion or team-building experience, talk to Wincate and
-              let's plan your next journey.
+              Need a visa, passport support, flight ticket, hotel, safari,
+              airport transfer, student travel assistance or an international
+              trip? Talk to Wincate and let's discuss your plans.
             </p>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-
             <a
               href="/contact"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold text-[#17151A] transition hover:bg-[#FFF9F5]"
@@ -786,15 +1287,11 @@ const Services = () => {
               <MessageCircle size={18} />
               WhatsApp Us
             </a>
-
           </div>
         </div>
       </section>
 
-      {/* =========================================================
-          CONTACT STRIP
-      ========================================================= */}
-      
+     
 <footer className="bg-black text-white">
   {/* Footer Main */}
   <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
@@ -1142,7 +1639,6 @@ const Services = () => {
     </div>
   </div>
 </footer>
-
     </main>
   );
 };
