@@ -39,7 +39,6 @@ const heroSlides = [
     text: "Private safaris, family adventures, excursions and tailor-made journeys designed around you.",
   },
 ];
-
 const safariPackages = [
   {
     title: "Maasai Mara Safari",
@@ -73,7 +72,6 @@ const safariPackages = [
       "Witness one of nature's greatest spectacles with dramatic wildlife encounters across the plains.",
     image: wilderbeast1,
   },
-  
   {
     title: "Diani Beach Holiday",
     duration: "3–5 Days",
@@ -82,7 +80,6 @@ const safariPackages = [
       "Unwind on white sandy beaches with ocean adventures, relaxation, and coastal experiences.",
     image: diani1,
   },
-  
   {
     title: "Zanzibar Island Holiday",
     duration: "4–5 Days",
@@ -90,7 +87,24 @@ const safariPackages = [
     description:
       "Experience turquoise waters, tropical beaches, Stone Town, and the unique Swahili culture.",
     image: zanzibar4,
-      
+  },
+  {
+    title: "Dubai Holiday",
+    duration: "4–6 Days",
+    location: "Dubai, United Arab Emirates",
+    description:
+      "Discover Dubai's iconic skyline, luxury shopping, desert safaris, beautiful beaches, and unforgettable city experiences.",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85",
+  },
+  {
+    title: "Visa Assistance",
+    duration: "Application Support",
+    location: "Kenya & International",
+    description:
+      "Get guidance on visa application requirements, supporting documents, and application procedures for your intended destination. Visa approval is determined by the relevant authorities.",
+    image:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85",
   },
   {
     title: "Hotel & Resort Bookings",
@@ -117,7 +131,6 @@ const safariPackages = [
     description:
       "Bring your team together with engaging outdoor activities, group adventures, and memorable retreats.",
     image: team,
-      
   },
   {
     title: "International Travel",
