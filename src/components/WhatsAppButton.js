@@ -5,17 +5,13 @@ export default function WhatsAppButton() {
 return (
 
 <a
-href="https://wa.me/+254724938419?text=Hello%20Wincate%20Tours,%20I%20would%20like%20to%20book%20a%20tour."
-target="_blank"
-rel="noopener noreferrer"
-
-className="fixed
-bottom-6
-right-6
-z-50
-group
-"
-
+  href={`https://wa.me/254724938419?text=${encodeURIComponent(
+    "Hello Wincate Tours & Travels,\n\nI would like to book:\n\n1. Ticket\n2. Visa\n3. Tour\n4. Hotel\n5. Team Building."
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Book with Wincate Tours and Travels on WhatsApp"
+  className="fixed bottom-6 right-6 z-50 group"
 >
 
 

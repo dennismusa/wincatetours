@@ -9,6 +9,8 @@ import mara2 from "../assets/mara2.jpg";
 import cruiser1 from "../assets/cruiser1.jpg";
 import amboseli from "../assets/amboseli.jpg";
 import nakuru from "../assets/nakuru.jpg";
+import team from "../assets/team.jpg";
+import zanzibar4 from "../assets/zanzibar4.jpg";
 import wilderbeast1 from "../assets/wilderbeast1.jpg";
 import serengeti2 from "../assets/serengeti2.jpg";
 import diani1 from "../assets/diani1.jpg";
@@ -40,36 +42,91 @@ const heroSlides = [
 
 const safariPackages = [
   {
-    image: mara2,
-    location: "Narok County",
     title: "Maasai Mara Safari",
-    description:
-      "Discover Kenya's most iconic wildlife destination and experience incredible game viewing across the Mara.",
     duration: "3 Days",
-  },
-  {
-    image: wilderbeast1,
-    location: "Maasai Mara",
-    title: "Wildebeest Migration",
+    location: "Maasai Mara, Kenya",
     description:
-      "Experience one of nature's greatest spectacles as massive herds move across the Mara ecosystem.",
-    duration: "4 Days",
+      "Explore Kenya's iconic savannah, spot the Big Five, and experience unforgettable wildlife encounters.",
+    image: mara1,
   },
   {
+    title: "Amboseli Adventure",
+    duration: "2–3 Days",
+    location: "Amboseli, Kenya",
+    description:
+      "Discover elephants roaming beneath the spectacular backdrop of Mount Kilimanjaro.",
     image: amboseli,
-    location: "Kajiado County",
-    title: "Amboseli Safari",
-    description:
-      "Meet giant elephant herds beneath the magnificent backdrop of Mount Kilimanjaro.",
-    duration: "3 Days",
   },
   {
-    image: nakuru,
-    location: "Nakuru County",
-    title: "Lake Nakuru Safari",
-    description:
-      "Explore beautiful landscapes, rhinos, flamingos and diverse wildlife around Lake Nakuru.",
+    title: "Lake Nakuru Escape",
     duration: "2 Days",
+    location: "Lake Nakuru, Kenya",
+    description:
+      "Enjoy beautiful lake scenery, rhinos, birdlife, and a refreshing wildlife getaway.",
+    image: nakuru,
+  },
+  {
+    title: "Wildebeest Migration",
+    duration: "4–6 Days",
+    location: "Maasai Mara, Kenya",
+    description:
+      "Witness one of nature's greatest spectacles with dramatic wildlife encounters across the plains.",
+    image: wilderbeast1,
+  },
+  
+  {
+    title: "Diani Beach Holiday",
+    duration: "3–5 Days",
+    location: "Diani Beach, Kenya",
+    description:
+      "Unwind on white sandy beaches with ocean adventures, relaxation, and coastal experiences.",
+    image: diani1,
+  },
+  
+  {
+    title: "Zanzibar Island Holiday",
+    duration: "4–5 Days",
+    location: "Zanzibar, Tanzania",
+    description:
+      "Experience turquoise waters, tropical beaches, Stone Town, and the unique Swahili culture.",
+    image: zanzibar4,
+      
+  },
+  {
+    title: "Hotel & Resort Bookings",
+    duration: "Tailor-Made",
+    location: "Kenya & Beyond",
+    description:
+      "Find suitable hotels, luxury resorts, beach properties, and safari lodges for your next trip.",
+    image:
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+  },
+  {
+    title: "Airport Transfers",
+    duration: "On Request",
+    location: "Nairobi, Kenya",
+    description:
+      "Enjoy convenient airport pickups, drop-offs, and comfortable transfers for your journey.",
+    image:
+      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=85",
+  },
+  {
+    title: "Team Building Experiences",
+    duration: "Half or Full Day",
+    location: "Kenya",
+    description:
+      "Bring your team together with engaging outdoor activities, group adventures, and memorable retreats.",
+    image: team,
+      
+  },
+  {
+    title: "International Travel",
+    duration: "Tailor-Made",
+    location: "Worldwide",
+    description:
+      "Plan international holidays with flight ticketing, accommodation, and travel documentation guidance.",
+    image:
+      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85",
   },
 ];
 
@@ -622,80 +679,132 @@ export default function Home() {
       {/* =========================================================
           FEATURED SAFARIS
       ========================================================== */}
-      <section className="px-6 py-20 lg:px-8 lg:py-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
-                Featured Experiences
-              </span>
+      
+<section className="relative overflow-hidden bg-[#FFF9F5] px-5 py-20 sm:px-6 lg:px-8 lg:py-28">
+  {/* Decorative background */}
+  <div className="pointer-events-none absolute -left-32 top-40 h-72 w-72 rounded-full bg-[#EC1676]/5 blur-3xl" />
+  <div className="pointer-events-none absolute -right-32 bottom-20 h-80 w-80 rounded-full bg-pink-200/30 blur-3xl" />
 
-              <h2 className="mt-3 font-serif text-4xl font-bold sm:text-5xl">
-                Journeys worth
-                <span className="text-[#EC1676]"> remembering.</span>
-              </h2>
+  <div className="relative mx-auto max-w-7xl">
+    {/* Section heading */}
+    <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+      <div className="max-w-2xl">
+        <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.25em] text-[#EC1676]">
+          <span className="h-1.5 w-7 rounded-full bg-[#EC1676]" />
+          Discover Wincate
+        </span>
+
+        <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-[#17151A] sm:text-5xl lg:text-6xl">
+          Journeys worth
+          <span className="block text-[#EC1676]">
+            remembering.
+          </span>
+        </h2>
+
+        <p className="mt-5 max-w-xl text-sm leading-7 text-gray-600 sm:text-base">
+          From unforgettable wildlife safaris and coastal escapes to hotel
+          bookings, airport transfers, and team adventures, we help you
+          experience more with Wincate Tours & Travels.
+        </p>
+      </div>
+
+      
+    </div>
+
+    {/* Experience cards */}
+    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {safariPackages.map((safari, index) => (
+        <article
+          key={safari.title}
+          className="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-lg shadow-black/[0.04] transition duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#EC1676]/10"
+        >
+          {/* Image */}
+          <div className="relative h-64 overflow-hidden sm:h-72">
+            <img
+              src={safari.image}
+              alt={safari.title}
+              loading={index < 4 ? "eager" : "lazy"}
+              className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/10 opacity-90 transition duration-500 group-hover:opacity-100" />
+
+            {/* Duration */}
+            <span className="absolute left-4 top-4 rounded-full border border-white/30 bg-white/95 px-3.5 py-2 text-[10px] font-extrabold uppercase tracking-wider text-[#17151A] shadow-sm">
+              {safari.duration}
+            </span>
+
+            {/* Number */}
+            <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/40 bg-black/20 text-xs font-bold text-white backdrop-blur-md">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+
+            {/* Image title and location */}
+            <div className="absolute inset-x-0 bottom-0 p-5 text-white sm:p-6">
+              <div className="mb-2 flex items-center gap-1.5 text-xs font-medium text-white/85">
+                <MapPin
+                  size={14}
+                  className="shrink-0 text-[#FF75B0]"
+                />
+                <span>{safari.location}</span>
+              </div>
+
+              <h3 className="font-serif text-2xl font-bold leading-tight">
+                {safari.title}
+              </h3>
             </div>
-
-            <a
-              href="/safaris"
-              className="group inline-flex items-center gap-2 font-bold"
-            >
-              View All Safaris
-              <ArrowRight
-                size={18}
-                className="text-[#EC1676] transition-transform group-hover:translate-x-1"
-              />
-            </a>
           </div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {safariPackages.map((safari) => (
-              <article
-                key={safari.title}
-                className="group overflow-hidden rounded-[2rem] bg-white shadow-lg shadow-black/5"
-              >
-                <div className="relative h-72 overflow-hidden">
-                  <img
-                    src={safari.image}
-                    alt={safari.title}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-
-                  <span className="absolute left-5 top-5 rounded-full bg-white/95 px-4 py-2 text-xs font-bold">
-                    {safari.duration}
-                  </span>
-
-                  <div className="absolute bottom-5 left-5 text-white">
-                    <div className="flex items-center gap-1 text-xs font-semibold text-white/80">
-                      <MapPin size={13} />
-                      {safari.location}
-                    </div>
-
-                    <h3 className="mt-1 text-xl font-bold">
-                      {safari.title}
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <p className="text-sm leading-7 text-gray-500">
-                    {safari.description}
-                  </p>
-
-                  <a
-                    href="/contact"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#EC1676]"
-                  >
-                    Enquire Now <ArrowRight size={16} />
-                  </a>
-                </div>
-              </article>
-            ))}
+          {/* Description only — no enquiry button */}
+          <div className="flex flex-1 flex-col p-5 sm:p-6">
+            <p className="text-sm leading-7 text-gray-600">
+              {safari.description}
+            </p>
           </div>
-        </div>
-      </section>
+        </article>
+      ))}
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-14 overflow-hidden rounded-[2rem] bg-[#17151A] px-6 py-9 sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+      <div className="max-w-2xl">
+        <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#FF75B0]">
+          Your next adventure starts here
+        </span>
+
+        <h3 className="mt-3 font-serif text-2xl font-bold text-white sm:text-3xl">
+          Have a trip in mind?
+        </h3>
+
+        <p className="mt-3 text-sm leading-7 text-white/65">
+          Tell us what you need, and let our team help you plan a journey
+          tailored to your budget, interests, and schedule.
+        </p>
+      </div>
+
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row lg:mt-0 lg:shrink-0">
+        <a
+          href="/contact"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-[#EC1676] px-6 py-3.5 text-sm font-bold text-white transition hover:bg-[#D80F68]"
+        >
+          Plan Your Trip
+          <ArrowRight size={17} />
+        </a>
+
+        <a
+          href={`https://wa.me/254724938419?text=${encodeURIComponent(
+            "Hello Wincate Tours & Travels, I would like help planning a trip. Please assist me with the available options."
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3.5 text-sm font-bold text-white transition hover:border-white hover:bg-white/10"
+        >
+          Chat With Our Team
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* =========================================================
           WILDEBEEST FEATURE
