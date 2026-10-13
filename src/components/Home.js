@@ -1315,63 +1315,87 @@ export default function Home() {
       {/* =====================================================
           DESTINATIONS
       ===================================================== */}
-      <div>
-        <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
-          Destinations
-        </h4>
+     
+{/* =====================================================
+    DESTINATIONS & SERVICES
+===================================================== */}
+<div>
+  <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-white">
+    Destinations & Services
+  </h4>
 
-        <ul className="space-y-4 text-sm text-white/55">
-          <li>
-            <a
-              href="/Destinations"
-              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
-            >
-              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
-              Maasai Mara
-            </a>
-          </li>
+  <ul className="space-y-4 text-sm text-white/55">
+    <li>
+      <a
+        href="/Destinations"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Maasai Mara
+      </a>
+    </li>
 
-          <li>
-            <a
-              href="/Destinations"
-              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
-            >
-              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
-              Amboseli
-            </a>
-          </li>
+    <li>
+      <a
+        href="/Destinations"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Amboseli
+      </a>
+    </li>
 
-          <li>
-            <a
-              href="/Destinations"
-              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
-            >
-              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
-              Lake Nakuru
-            </a>
-          </li>
+    <li>
+      <a
+        href="/Destinations"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Lake Nakuru
+      </a>
+    </li>
 
-          <li>
-            <a
-              href="/Destinations"
-              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
-            >
-              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
-              Nairobi
-            </a>
-          </li>
+    <li>
+      <a
+        href="/Destinations"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Nairobi
+      </a>
+    </li>
 
-          <li>
-            <a
-              href="/Destinations"
-              className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
-            >
-              <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
-              Diani Beach
-            </a>
-          </li>
-        </ul>
-      </div>
+    <li>
+      <a
+        href="/Destinations"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Diani Beach
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="/Destinations"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Dubai Holidays
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="/services"
+        className="group flex items-center gap-2 transition hover:text-[#FF4C9A]"
+      >
+        <span className="h-px w-0 bg-[#FF4C9A] transition-all duration-300 group-hover:w-4" />
+        Visa Assistance
+      </a>
+    </li>
+  </ul>
+</div>
 
       {/* =====================================================
           CONTACT
