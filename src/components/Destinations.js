@@ -1853,6 +1853,7 @@ description:
   </ul>
 </div>
 
+
       {/* =====================================================
           CONTACT
       ===================================================== */}
@@ -1887,7 +1888,19 @@ description:
               0724 938419
             </a>
           </div>
+{/* Email */}
+<div>
+  <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#FF4C9A]">
+    Email
+  </p>
 
+  <a
+    href="mailto:info@wincatetoursandtravels.com"
+    className="break-all transition hover:text-[#FF4C9A]"
+  >
+    info@wincatetoursandtravels.com
+  </a>
+</div>
           <div>
             <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#FF4C9A]">
               Website
